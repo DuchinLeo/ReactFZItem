@@ -1,0 +1,6 @@
+@function px2rem($px) {
+  @return $px * 320 / $designWidth/20 + rem;
+}
+
+// 这里的值，等同于图纸的宽度
+$designWidth: 375;

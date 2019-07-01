@@ -4,18 +4,19 @@ import AuthRoute from './utils/Auth';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { SpinWrap } from './style';
 
+
 const Home = Loadable({
   // 需要异步加载的组件
   loader: () => import('./views/home'),
   // 加载中的提示组件
-  loading: () => <SpinWrap size="large" />
+  loading: () => <SpinWrap className="test1" size="large" />
 });
 
 const Login = Loadable({
   // 需要异步加载的组件
   loader: () => import('./views/login'),
   // 加载中的提示组件
-  loading: () => <div><SpinWrap size="large" />
+  loading: () => <div><SpinWrap className="test1" size="large" />
   </div>
 });
 

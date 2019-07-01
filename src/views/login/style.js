@@ -1,9 +1,7 @@
 import styled from 'styled-components';
+import "../../px2rem.scss";
+
 
 export const LoginWrap = styled.div`
-  width: 500px;
-  height: auto;
   background: #eff;
-  margin: 50px auto;
-  padding: 20px;
 `;

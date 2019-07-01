@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { LoginWrap } from './style';
 import { connect } from 'react-redux';
 import { Form } from 'antd'
+import './style.scss'
 
 class Login extends Component {
   state = {}
   render () {
     return (
       <LoginWrap>
-        <div>
+        <div className="box">
           登陆页面
         </div>
       </LoginWrap>

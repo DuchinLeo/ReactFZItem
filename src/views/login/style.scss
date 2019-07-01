@@ -1,0 +1,12 @@
+@import "../../px2rem.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: px2rem(200);
+  width: px2rem(200);
+  background: rgb(243, 179, 83);
+}
