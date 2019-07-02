@@ -1,12 +1,87 @@
 @import "../../px2rem.scss";
 
-* {
-  margin: 0;
-  padding: 0;
+.ant-message-custom-content {
+  width: px2rem(140) !important;
+  height: px2rem(50) !important;
+  font-size: px2rem(16) !important;
+  line-height: px2rem(40);
+  .anticon-close-circle {
+    font-size: px2rem(16) !important;
+  }
+  .anticon-check-circle {
+    font-size: px2rem(16) !important;
+  }
 }
+.login-box-a {
+  overflow: hidden;
+  position: relative;
+  .box {
+    margin: 0 auto;
+    height: px2rem(80);
+    width: px2rem(80);
+    background: url(https://gw.alicdn.com/tfs/TB1p.BGQXXXXXbFXFXXXXXXXXXX-160-160.png)
+      no-repeat;
+    background-size: 100%;
+    margin-top: px2rem(47);
+    margin-bottom: px2rem(40);
+  }
+  .messge {
+    height: px2rem(80);
+    width: px2rem(80);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+  }
+  .form-box {
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    .login-form {
+      color: #ddd;
+      width: 88%;
+      margin: 0 auto;
+      .ant-form-explain {
+        font-size: px2rem(14) !important;
+      }
+      .login-box {
+        color: #ddd;
+        .input-box {
+          height: px2rem(30);
+          font-size: px2rem(16) !important;
+          color: #ddd;
+        }
+        input {
+          border: px2rem(1) solid #ddd;
+          font-size: px2rem(16) !important;
+          height: px2rem(30);
+          padding-left: px2rem(23);
+          border-top: 0;
+          border-right: 0;
+          border-left: 0;
+          outline: none !important;
+          border-color: rgb(226, 56, 4);
+        }
 
-.box {
-  height: px2rem(375);
-  width: px2rem(667);
-  background: rgb(243, 179, 83);
+
+        a {
+          font-size: px2rem(14) !important;
+          color: #666;
+        }
+        button {
+          width: 100%;
+          height: px2rem(45);
+          font-size: px2rem(14) !important;
+          background: -webkit-linear-gradient(
+            left,
+            rgb(236, 166, 166),
+            rgb(245, 6, 6)
+          ) !important;
+          border: 0;
+          border-radius: px2rem(16);
+        }
+      }
+    }
+  }
 }
