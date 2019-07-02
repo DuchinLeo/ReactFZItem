@@ -22,7 +22,9 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.22.1",
     "sass-loader": "^7.1.0",
-    "styled-components": "^4.3.2"
+    "scss": "^0.2.4",
+    "styled-components": "^4.3.2",
+    "swiper": "^4.5.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
