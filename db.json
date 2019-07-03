@@ -1,4 +1,1416 @@
 {
+
+
+        "data": {
+            "sold": {
+                "data": {
+                    "comment": "评论46条",
+                    "score": "5分 超出预期",
+                    "sold": "月销 88 笔",
+                    "soldCount": 88
+                },
+                "tag": "sold"
+            },
+            "pageContainer": {
+                "children": [
+                    "detailCore"
+                ],
+                "data": {
+                    "eagleEyeId": "0b18250915620509413268793e3b82",
+                    "systemTime": 1562050941448
+                },
+                "tag": "pageContainer"
+            },
+            "shop": {
+                "data": {
+                    "jumpInfo": {
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://shop.m.taobao.com/shop/shop_index.htm?shop_id=355885870",
+                        "jumpNative": false,
+                        "showBuyButton": true
+                    },
+                    "sellerId": 2200539097548,
+                    "sellerName": "秦皇岛旭冉旅行社专营店",
+                    "shopEvaluation": [
+                        {
+                            "highGap": "1",
+                            "highGapBgColor": "#FFEBE4",
+                            "highGapText": "高",
+                            "highGapTextColor": "#FF5000",
+                            "score": "4.9",
+                            "title": "描述相符"
+                        },
+                        {
+                            "highGap": "1",
+                            "highGapBgColor": "#FFEBE4",
+                            "highGapText": "高",
+                            "highGapTextColor": "#FF5000",
+                            "score": "4.9",
+                            "title": "服务态度"
+                        }
+                    ],
+                    "shopId": 355885870,
+                    "shopName": "秦皇岛旭冉旅行社专营店",
+                    "shopPic": "https://img.alicdn.com/bao/uploaded//78/96/TB1NHcubMaH3KVjSZFjSuwFWpXa.jpg",
+                    "shopTypePic": "https://gw.alicdn.com/tps/TB1vSE_OVXXXXXNXXXXXXXXXXXX-123-42.png"
+                },
+                "tag": "shop"
+            },
+            "detailCore": {
+                "children": [
+                    "banner",
+                    "price",
+                    "title",
+                    "sold",
+                    "brand",
+                    "itemExtra",
+                    "serviceTimeInfo",
+                    "selectSku",
+                    "sku",
+                    "rate",
+                    "askAll",
+                    "shop",
+                    "buyBanner",
+                    "spm",
+                    "shopCoupons",
+                    "fliggyShopRecomd"
+                ],
+                "data": {
+                    "categoryId": 50272002,
+                    "shareInfo": {
+                        "image_url": "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+                        "text_context": "我在飞猪发现了一个不错的商品，赶快来看看吧。",
+                        "title_context": "北京/天津-北戴河双动3天2晚自由行",
+                        "url_content": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584499936435&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002"
+                    }
+                },
+                "tag": "detailCore"
+            },
+            "coupon": {
+                "data": {
+                    "cells": [
+                        {
+                            "event": {},
+                            "icon": "https://gw.alicdn.com/tfs/TB1VELph3MPMeJjy1XcXXXpppXa-186-36.png",
+                            "sort": 4,
+                            "title": "领取店铺20元优惠券",
+                            "type": 1
+                        }
+                    ],
+                    "titleColor": "#666666"
+                },
+                "tag": "coupon"
+            },
+            "askAll": {
+                "data": {
+                    "jumpInfo": {
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://h5.m.taobao.com/wendajia/question.htm?itemId=584499936435&wdjType=1&dataFrom=15",
+                        "jumpNative": false,
+                        "showBuyButton": true
+                    },
+                    "questions": [
+                        {
+                            "count": 0,
+                            "question": "宝贝好不好，问问已买的人"
+                        }
+                    ],
+                    "size": 0
+                },
+                "tag": "askAll"
+            },
+            "shopCoupons": {
+                "data": {
+                    "couponList": [
+                        {
+                            "buttonDesc": "领取",
+                            "conditions": "满300元使用",
+                            "couponPrice": "20",
+                            "event": {
+                                "getCoupon": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "FliggyItemDetailOmegaNormalClick",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.coupondetail.0"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "click_get_coupon",
+                                        "params": {
+                                            "sellerId": 2200539097548,
+                                            "uuid": "35314c3b33d047af8a6b3d24deb76b90"
+                                        }
+                                    }
+                                ]
+                            },
+                            "sellerId": 2200539097548,
+                            "sort": 0,
+                            "uuid": "35314c3b33d047af8a6b3d24deb76b90",
+                            "validDate": "有效期:2019.03.12-2019.07.31 "
+                        },
+                        {
+                            "buttonDesc": "领取",
+                            "conditions": "满200元使用",
+                            "couponPrice": "10",
+                            "event": {
+                                "getCoupon": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "FliggyItemDetailOmegaNormalClick",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.coupondetail.1"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "click_get_coupon",
+                                        "params": {
+                                            "sellerId": 2200539097548,
+                                            "uuid": "84b59ff0c7ad459ca65748d194a7a6f3"
+                                        }
+                                    }
+                                ]
+                            },
+                            "sellerId": 2200539097548,
+                            "sort": 0,
+                            "uuid": "84b59ff0c7ad459ca65748d194a7a6f3",
+                            "validDate": "有效期:2019.03.12-2019.08.31 "
+                        }
+                    ],
+                    "couponType": 2,
+                    "name": "店铺优惠券",
+                    "sort": 0
+                },
+                "tag": "shopCoupons"
+            },
+            "banner": {
+                "data": {
+                    "containerSpatialRate": "1:1",
+                    "jounery": {
+                        "elements": [
+                            {
+                                "desc": "天津、北京",
+                                "icon": "https://gw.alicdn.com/tfs/TB1AMXmMRLoK1RjSZFuXXXn0XXa-60-60.png",
+                                "title": "出发地"
+                            },
+                            {
+                                "desc": "北戴河区",
+                                "icon": "https://gw.alicdn.com/tfs/TB1R4lqMSzqK1RjSZFpXXakSXXa-60-60.png",
+                                "title": "目的地"
+                            },
+                            {
+                                "desc": "火车票、酒店",
+                                "icon": "https://gw.alicdn.com/tfs/TB19i80MOLaK1RjSZFxXXamPFXa-60-60.png",
+                                "title": "包含元素"
+                            }
+                        ],
+                        "title": "多地出发-秦皇岛  自由行"
+                    },
+                    "leftDesc": "自由行",
+                    "pics": [
+                        "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+                        "https://img.alicdn.com/bao/uploaded/i1/2200539097548/O1CN01a9HFWE25d21RoGGQD_!!2200539097548.jpg",
+                        "https://img.alicdn.com/bao/uploaded/i3/2200539097548/O1CN01RsGTQI25d21Zu9YVq_!!2200539097548.jpg",
+                        "https://img.alicdn.com/bao/uploaded/i2/2200539097548/O1CN014m4PdW25d21Ybrevd_!!2200539097548.jpg"
+                    ]
+                },
+                "tag": "banner"
+            },
+            "itemExtra": {
+                "children": [
+                    "coupon",
+                    "mileage"
+                ],
+                "data": {},
+                "tag": "itemExtra"
+            },
+            "buyBanner": {
+                "data": {
+                    "buttonShowState": 0,
+                    "buyButtonDesc": "立即购买",
+                    "buyButtonStyle": "NORMAL_BUY",
+                    "buyButtonSupport": true,
+                    "buyJumpInfo": {
+                        "buyUrlType": 6,
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://tripbuy.fliggy.com/router/confirmRouterH5.htm",
+                        "jumpNative": false,
+                        "newBuy": true,
+                        "newJumpH5Url": "https://h5.m.taobao.com/trip/buy/confirm/index.html?_fli_webview=true",
+                        "showBuyButton": true
+                    },
+                    "carBizType": 1,
+                    "carButtonStyle": "NORMAL_CAR",
+                    "carButtonSupport": true,
+                    "carDesc": "加入购物车",
+                    "carItemJumpInfo": {
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://h5.m.taobao.com/trip/cart/index/index.html",
+                        "showBuyButton": true
+                    },
+                    "carType": 2,
+                    "saveIcon": "SaveIcon",
+                    "sellerContact": {
+                        "itemPic": "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+                        "itemTitle": "北京/天津-北戴河双动3天2晚自由行",
+                        "itemUrl": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584499936435",
+                        "sellerId": 2200539097548,
+                        "sellerNick": "秦皇岛旭冉旅行社专营店"
+                    },
+                    "sellerId": 2200539097548,
+                    "sellerName": "秦皇岛旭冉旅行社专营店",
+                    "shopIcon": "shopIcon",
+                    "shopJumpInfo": {
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://shop.m.taobao.com/shop/shop_index.htm?shop_id=355885870",
+                        "jumpNative": false,
+                        "showBuyButton": true
+                    },
+                    "skuBizDomain": 0
+                },
+                "tag": "buyBanner"
+            },
+            "title": {
+                "data": {
+                    "itemTitle": "北京/天津-北戴河双动3天2晚自由行",
+                    "shareInfo": {
+                        "image_url": "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+                        "shareIconFont": "ꄪ",
+                        "text_context": "我在飞猪发现了一个不错的商品，赶快来看看吧。",
+                        "title_context": "北京/天津-北戴河双动3天2晚自由行",
+                        "url_content": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584499936435&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002"
+                    }
+                },
+                "tag": "title"
+            },
+            "spm": {
+                "data": {
+                    "itemId": "584499936435",
+                    "pageSpm": "181.7850105",
+                    "pageType": 1,
+                    "sellerId": 2200539097548,
+                    "shopId": 355885870,
+                    "shopType": 2
+                },
+                "tag": "spm"
+            },
+            "serviceTimeInfo": {
+                "data": {
+                    "infos": [
+                        {
+                            "contents": [
+                                {
+                                    "src": "//gw.alicdn.com/tfs/TB1puGXRXXXXXcjaXXXXXXXXXXX-152-36.png",
+                                    "type": "icon"
+                                }
+                            ]
+                        },
+                        {
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "value": "该商品在支付成功后需等待卖家确认，平均确认时长1小时8分钟，通过率98%"
+                                }
+                            ]
+                        }
+                    ],
+                    "label": "服务"
+                },
+                "tag": "serviceTimeInfo"
+            },
+            "rate": {
+                "data": {
+                    "jumpInfo": {
+                        "buyUrlType": 0,
+                        "extJumpUrlParams": {},
+                        "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/comment.html?id=584499936435&categoryId=50272002",
+                        "jumpNative": false,
+                        "showBuyButton": true
+                    },
+                    "rateCell": {
+                        "picList": [
+                            "https://img.alicdn.com/i3/O1CN01cAPsIz1JqgHnvd4YY_!!0-alitrip.jpg"
+                        ],
+                        "rateContent": "非常棒，住宿的房间很大很宽敞，一大扇窗阳光照进来，本来我们是双人间，给我们免费升级大床房了，房间里有个小吊床很可爱，酒店离海边很近，走十来分钟就到了。来接我们的师傅也很nice，有问题都在微信上给我们解答了。非常愉快的一次旅行。唯一不开心的就是当地一个叫悦华的自助餐厅，去了之后说人不多没有自助，给我们上的海鲜大咖，螃蟹小的不行，水煮虾也不新鲜，蛤蜊好多空壳死壳，建议后面去玩的到他家不要点海鲜大咖，有自助吃自助，没自助换一家。",
+                        "rateDate": "2019-06-07 19:53:10",
+                        "rateId": 1047236541974,
+                        "userAvatar": "http://wwc.alicdn.com/avatar/getAvatar.do?userIdStr=vGNuOHcWv88YXF-HPmvbM07HvG8SvFI0Xm7Hvm80Mkx4vGQyMFvyX8lHXmHWOF--&width=40&height=40&type=sns",
+                        "userNick": "绳*筱"
+                    },
+                    "rateTagList": [
+                        {
+                            "count": 15,
+                            "posi": 1,
+                            "tagId": "10120-11",
+                            "tagTip": "服务好",
+                            "weight": 0
+                        },
+                        {
+                            "count": 9,
+                            "posi": 1,
+                            "tagId": "896-11",
+                            "tagTip": "住宿环境很好",
+                            "weight": 0
+                        },
+                        {
+                            "count": 8,
+                            "posi": 1,
+                            "tagId": "620-11",
+                            "tagTip": "质量很好",
+                            "weight": 0
+                        },
+                        {
+                            "count": 6,
+                            "posi": 1,
+                            "tagId": "195296-11",
+                            "tagTip": "行程安排不错",
+                            "weight": 0
+                        },
+                        {
+                            "count": 5,
+                            "posi": 1,
+                            "tagId": "296-11",
+                            "tagTip": "行程安排很赞",
+                            "weight": 0
+                        },
+                        {
+                            "count": 5,
+                            "posi": 1,
+                            "tagId": "20696-11",
+                            "tagTip": "导游很热情",
+                            "weight": 0
+                        },
+                        {
+                            "count": 4,
+                            "posi": 1,
+                            "tagId": "520-11",
+                            "tagTip": "价格实惠",
+                            "weight": 0
+                        },
+                        {
+                            "count": 2,
+                            "posi": 1,
+                            "tagId": "15296-11",
+                            "tagTip": "交通不错",
+                            "weight": 0
+                        },
+                        {
+                            "count": 2,
+                            "posi": -1,
+                            "tagId": "896-13",
+                            "tagTip": "住宿环境一般",
+                            "weight": 0
+                        },
+                        {
+                            "count": 1,
+                            "posi": -1,
+                            "tagId": "10120-13",
+                            "tagTip": "服务一般",
+                            "weight": 0
+                        }
+                    ],
+                    "total": 46
+                },
+                "tag": "rate"
+            },
+            "price": {
+                "data": {
+                    "aidedPrice": {
+                        "extra": []
+                    },
+                    "extra": [],
+                    "mainPrice": {
+                        "extra": [],
+                        "price": "42900-209900",
+                        "priceText": "429-2099"
+                    }
+                },
+                "tag": "price"
+            },
+            "fliggyShopRecomd": {
+                "data": {
+                    "itemLst": [
+                        {
+                            "categoryDesc": "自由行",
+                            "currPrice": "399",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.0",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_0_shopRecommend_584707769803__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:1.000000_siScore:0.096113_userId:0_lrScore:0.035371_nlrScore:1.000000_lrRank:0_price:399.0_title:28_sale:27_uvsale:60_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000241_isSeller:0_cvrScore:0.030528_cvrNScore:1.000000_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "584707769803",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584707769803&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "584707769803",
+                            "itemName": "北京/天津-北戴河双动2日1晚自由行（全程休闲纯自由行）",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i2/2200539097548/O1CN01s4iGiK25d21106yxc_!!2200539097548.jpg",
+                            "sold": "已售60笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_0_shopRecommend_584707769803__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:1.000000_siScore:0.096113_userId:0_lrScore:0.035371_nlrScore:1.000000_lrRank:0_price:399.0_title:28_sale:27_uvsale:60_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000241_isSeller:0_cvrScore:0.030528_cvrNScore:1.000000_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584707769803&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        },
+                        {
+                            "categoryDesc": "自由行",
+                            "currPrice": "1999",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.1",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_1_shopRecommend_588739104255__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.637430_siScore:0.072697_userId:0_lrScore:0.024898_nlrScore:0.703900_lrRank:2_price:1999.0_title:37_uvsale:2_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000109_isSeller:0_cvrScore:0.024422_cvrNScore:0.799977_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "588739104255",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=588739104255&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "588739104255",
+                            "itemName": "北京/天津出发 北戴河 3天2晚自由行小众轻奢 Arcadia 度假村别墅",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i3/2200539097548/O1CN01TX4yJ625d20Ykr21l_!!2200539097548.jpg",
+                            "sold": "已售2笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_1_shopRecommend_588739104255__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.637430_siScore:0.072697_userId:0_lrScore:0.024898_nlrScore:0.703900_lrRank:2_price:1999.0_title:37_uvsale:2_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000109_isSeller:0_cvrScore:0.024422_cvrNScore:0.799977_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=588739104255&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        },
+                        {
+                            "categoryDesc": "跟团游",
+                            "currPrice": "258",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.2",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_2_shopRecommend_592128814200__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.741595_siScore:0.086109_userId:0_lrScore:0.028656_nlrScore:0.810142_lrRank:1_price:258.0_title:26_uvsale:17_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000078_isSeller:0_cvrScore:0.007530_cvrNScore:0.246670_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "592128814200",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=592128814200&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50258004&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "592128814200",
+                            "itemName": "北戴河网红打卡 阿那亚礼堂＋孤独图书馆+猫的天空之城",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i2/2200539097548/O1CN01qnjOWa25d22sG1NDU_!!2200539097548.jpg",
+                            "sold": "已售17笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_2_shopRecommend_592128814200__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.741595_siScore:0.086109_userId:0_lrScore:0.028656_nlrScore:0.810142_lrRank:1_price:258.0_title:26_uvsale:17_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000078_isSeller:0_cvrScore:0.007530_cvrNScore:0.246670_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=592128814200&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50258004&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        },
+                        {
+                            "categoryDesc": "自由行",
+                            "currPrice": "899",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.3",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_3_shopRecommend_592324012697__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.604009_siScore:0.076541_userId:0_lrScore:0.018496_nlrScore:0.522910_lrRank:7_price:899.0_title:32_sale:2_uvsale:2_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000060_isSeller:0_cvrScore:0.024422_cvrNScore:0.799977_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "592324012697",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=592324012697&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "592324012697",
+                            "itemName": "北京/天津-北戴河 动车往返网红3天2晚自由行 含近观孤独图书馆",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i4/TB1WosjSwTqK1RjSZPhzDdfOFXa_031201.jpg",
+                            "sold": "已售2笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_3_shopRecommend_592324012697__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.604009_siScore:0.076541_userId:0_lrScore:0.018496_nlrScore:0.522910_lrRank:7_price:899.0_title:32_sale:2_uvsale:2_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000060_isSeller:0_cvrScore:0.024422_cvrNScore:0.799977_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=592324012697&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        },
+                        {
+                            "categoryDesc": "跟团游",
+                            "currPrice": "699",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.4",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_4_shopRecommend_584707909986__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.530326_siScore:0.062680_userId:0_lrScore:0.018992_nlrScore:0.536947_lrRank:3_price:699.0_title:30_sale:3_uvsale:8_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000057_isSeller:0_cvrScore:0.020016_cvrNScore:0.655673_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "584707909986",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584707909986&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50258004&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "584707909986",
+                            "itemName": "山海关-沙雕海洋乐园-北戴河动车往返3日游 秦皇岛全景休闲游",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i2/2200539097548/O1CN018XJptp25d1zcnMnlD_!!2200539097548.jpg",
+                            "sold": "已售8笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_4_shopRecommend_584707909986__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.530326_siScore:0.062680_userId:0_lrScore:0.018992_nlrScore:0.536947_lrRank:3_price:699.0_title:30_sale:3_uvsale:8_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000057_isSeller:0_cvrScore:0.020016_cvrNScore:0.655673_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=584707909986&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50258004&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        },
+                        {
+                            "categoryDesc": "自由行",
+                            "currPrice": "1999",
+                            "event": {
+                                "openRecommendItem": [
+                                    {
+                                        "key": "user_track",
+                                        "params": {
+                                            "trackName": "vacation_detail_recommend_shop",
+                                            "trackNamePre": "Button-",
+                                            "trackParams": {
+                                                "spm": "181.7850105.taobao_shop_recommend.5",
+                                                "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_5_shopRecommend_588665812372__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.479191_siScore:0.069893_userId:0_lrScore:0.018530_nlrScore:0.523874_lrRank:6_price:1999.0_title:38_sale:6_uvsale:11_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000051_isSeller:0_cvrScore:0.017626_cvrNScore:0.577385_detailSrc:fliggyRecfzgxh1",
+                                                "itemId": "588665812372",
+                                                "f_business_type": "travel"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "key": "open_url",
+                                        "params": {
+                                            "url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=588665812372&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000"
+                                        }
+                                    }
+                                ]
+                            },
+                            "itemId": "588665812372",
+                            "itemName": "北京/天津&mdash; anaya阿那亚礼堂+孤独图书馆 动车往返3天2晚",
+                            "itemPic": "https://img.alicdn.com/bao/uploaded/i2/2200539097548/O1CN01ADxD7p25d20g7IVl4_!!2200539097548.jpg",
+                            "sold": "已售11笔",
+                            "trackInfo": "fzgxh6#c73db8e2-7ea1-4f7a-8998-3c664b772edc_1007.24335.130272.100200300000000_5_shopRecommend_588665812372__itId:584499936435_triId:584499936435_fMType:MAIN--SWING--I2I_fMscore:0.479191_siScore:0.069893_userId:0_lrScore:0.018530_nlrScore:0.523874_lrRank:6_price:1999.0_title:38_sale:6_uvsale:11_mIPrice:429.0_mItitlelen:18_mIsale:88_mIuvsale:201_cmpScore:122.000051_isSeller:0_cvrScore:0.017626_cvrNScore:0.577385_detailSrc:fliggyRecfzgxh1",
+                            "tripJumpInfo": {
+                                "jumpH5Url": "https://h5.m.taobao.com/trip/travel-detail/index/index.html?id=588665812372&_fli_newpage=1&_fli_native_ver=9.1.6&categoryId=50272002&scm=1007.24335.130272.100200300000000",
+                                "jumpNative": false
+                            }
+                        }
+                    ],
+                    "title": "店铺推荐",
+                    "tripJumpInfo": {
+                        "jumpH5Url": "https://market.m.taobao.com/apps/market/shop/weex.html?wh_weex=true&wx_navbar_transparent=true&shop_navi=allitems&wx_navbar_hidden=true&shopId=355885870",
+                        "jumpNative": false
+                    }
+                },
+                "tag": "fliggyShopRecomd"
+            },
+            "selectSku": {
+                "data": {
+                    "props": [
+                        "出发地",
+                        "套餐类型",
+                        "出游人群"
+                    ]
+                },
+                "tag": "selectSku"
+            },
+            "sku": {
+                "data": {
+                    "dateRange": {
+                        "endDate": "2019-08-31",
+                        "startDate": "2019-07-03"
+                    },
+                    "enableSelectCount": false,
+                    "groupSkuMap": {},
+                    "hideActionPrice": false,
+                    "mainPic": "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+                    "props": [
+                        {
+                            "skuPropId": 1000000,
+                            "skuPropList": [
+                                {
+                                    "pvId": "1000000:155792392-29400",
+                                    "value": "北京"
+                                },
+                                {
+                                    "pvId": "1000000:155792394-29428",
+                                    "value": "天津"
+                                }
+                            ],
+                            "skuPropTitle": "出发地"
+                        },
+                        {
+                            "skuPropId": 5919063,
+                            "skuPropList": [
+                                {
+                                    "pvId": "5919063:3266786",
+                                    "value": "北京出发高档型酒店"
+                                },
+                                {
+                                    "pvId": "5919063:3266785",
+                                    "value": "天津出发高档型酒店"
+                                },
+                                {
+                                    "pvId": "5919063:3266781",
+                                    "value": "北京出发经济型酒店"
+                                },
+                                {
+                                    "pvId": "5919063:79046194",
+                                    "value": "天津出发经济型酒店"
+                                },
+                                {
+                                    "pvId": "5919063:59904168",
+                                    "value": "北京出发喜来登酒店"
+                                },
+                                {
+                                    "pvId": "5919063:205594680",
+                                    "value": "天津出发豪华型酒店"
+                                }
+                            ],
+                            "skuPropTitle": "套餐类型"
+                        },
+                        {
+                            "skuPropId": 8558246,
+                            "skuPropList": [
+                                {
+                                    "pvId": "8558246:3622544",
+                                    "selected": true,
+                                    "value": "成人"
+                                },
+                                {
+                                    "pvId": "8558246:27845",
+                                    "value": "儿童"
+                                },
+                                {
+                                    "pvId": "8558246:139829014",
+                                    "value": "单人房差"
+                                }
+                            ],
+                            "skuPropTitle": "出游人群"
+                        }
+                    ],
+                    "selectedDateTitle": "出发",
+                    "serviceTimeInfo": {
+                        "infos": [
+                            {
+                                "contents": [
+                                    {
+                                        "src": "//gw.alicdn.com/tfs/TB1puGXRXXXXXcjaXXXXXXXXXXX-152-36.png",
+                                        "type": "icon"
+                                    }
+                                ]
+                            },
+                            {
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "value": "该商品在支付成功后需等待卖家确认，平均确认时长1小时8分钟，通过率98%"
+                                    }
+                                ]
+                            }
+                        ],
+                        "label": "服务"
+                    },
+                    "showInventoryRule": {
+                        "max": 100,
+                        "showInventoryNum": false
+                    },
+                    "skuListExtend": {},
+                    "skuMap": {
+                        "8558246:3622544;5919063:3266781;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 49900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-29~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-26~2019-08-28"
+                                ],
+                                "finalPrice": 49900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967612"
+                            },
+                            {
+                                "buyPrice": 59900,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 59900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967612"
+                            },
+                            {
+                                "buyPrice": 45900,
+                                "dateRanges": [
+                                    "2019-07-28"
+                                ],
+                                "finalPrice": 45900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967612"
+                            },
+                            {
+                                "buyPrice": 42900,
+                                "dateRanges": [
+                                    "2019-08-25"
+                                ],
+                                "finalPrice": 42900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967612"
+                            }
+                        ],
+                        "8558246:3622544;5919063:3266785;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 69900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 69900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967615"
+                            },
+                            {
+                                "buyPrice": 79900,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 79900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967615"
+                            }
+                        ],
+                        "8558246:139829014;5919063:3266781;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 23900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 23900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967610"
+                            },
+                            {
+                                "buyPrice": 33800,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 33800,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967610"
+                            }
+                        ],
+                        "8558246:27845;5919063:205594680;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 5900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 5900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4240713987551"
+                            }
+                        ],
+                        "8558246:3622544;5919063:205594680;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 179900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-07-04",
+                                    "2019-07-07~2019-07-11",
+                                    "2019-07-14~2019-07-18",
+                                    "2019-07-21~2019-07-25",
+                                    "2019-07-28~2019-08-01",
+                                    "2019-08-04~2019-08-08",
+                                    "2019-08-11~2019-08-15",
+                                    "2019-08-18~2019-08-22",
+                                    "2019-08-25~2019-08-29"
+                                ],
+                                "finalPrice": 179900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4240713987552"
+                            },
+                            {
+                                "buyPrice": 209900,
+                                "dateRanges": [
+                                    "2019-07-05~2019-07-06",
+                                    "2019-07-12~2019-07-13",
+                                    "2019-07-19~2019-07-20",
+                                    "2019-07-26~2019-07-27",
+                                    "2019-08-02~2019-08-03",
+                                    "2019-08-09~2019-08-10",
+                                    "2019-08-16~2019-08-17",
+                                    "2019-08-23~2019-08-24",
+                                    "2019-08-30~2019-08-31"
+                                ],
+                                "finalPrice": 209900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4240713987552"
+                            }
+                        ],
+                        "8558246:139829014;5919063:3266785;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 29900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 29900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967613"
+                            },
+                            {
+                                "buyPrice": 39900,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 39900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967613"
+                            }
+                        ],
+                        "8558246:27845;5919063:79046194;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 3900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 3900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967620"
+                            }
+                        ],
+                        "8558246:139829014;5919063:205594680;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 139900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-07-04",
+                                    "2019-07-07~2019-07-11",
+                                    "2019-07-14~2019-07-18",
+                                    "2019-07-21~2019-07-25",
+                                    "2019-07-28~2019-08-01",
+                                    "2019-08-04~2019-08-08",
+                                    "2019-08-11~2019-08-15",
+                                    "2019-08-18~2019-08-22",
+                                    "2019-08-25~2019-08-29"
+                                ],
+                                "finalPrice": 139900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4240713987550"
+                            },
+                            {
+                                "buyPrice": 179900,
+                                "dateRanges": [
+                                    "2019-07-05~2019-07-06",
+                                    "2019-07-12~2019-07-13",
+                                    "2019-07-19~2019-07-20",
+                                    "2019-07-26~2019-07-27",
+                                    "2019-08-02~2019-08-03",
+                                    "2019-08-09~2019-08-10",
+                                    "2019-08-16~2019-08-17",
+                                    "2019-08-23~2019-08-24",
+                                    "2019-08-30~2019-08-31"
+                                ],
+                                "finalPrice": 179900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4240713987550"
+                            }
+                        ],
+                        "8558246:139829014;5919063:3266786;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 29900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 29900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902035"
+                            },
+                            {
+                                "buyPrice": 39900,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 39900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902035"
+                            }
+                        ],
+                        "8558246:27845;5919063:3266786;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 3900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 3900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902036"
+                            }
+                        ],
+                        "8558246:3622544;5919063:79046194;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 59900,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 59900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967621"
+                            },
+                            {
+                                "buyPrice": 69900,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 69900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967621"
+                            }
+                        ],
+                        "8558246:27845;5919063:3266781;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 3900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 3900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967611"
+                            }
+                        ],
+                        "8558246:139829014;5919063:79046194;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 23800,
+                                "dateRanges": [
+                                    "2019-07-03",
+                                    "2019-07-07~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-25~2019-08-28"
+                                ],
+                                "finalPrice": 23800,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967619"
+                            },
+                            {
+                                "buyPrice": 33800,
+                                "dateRanges": [
+                                    "2019-07-04~2019-07-06",
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24",
+                                    "2019-08-29~2019-08-31"
+                                ],
+                                "finalPrice": 33800,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967619"
+                            }
+                        ],
+                        "8558246:27845;5919063:3266785;1000000:155792394-29428": [
+                            {
+                                "buyPrice": 3900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 3900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967614"
+                            }
+                        ],
+                        "8558246:139829014;5919063:59904168;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 139900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-07-04",
+                                    "2019-07-07~2019-07-11",
+                                    "2019-07-14~2019-07-18",
+                                    "2019-07-21~2019-07-25",
+                                    "2019-07-28~2019-08-01",
+                                    "2019-08-04~2019-08-08",
+                                    "2019-08-11~2019-08-15",
+                                    "2019-08-18~2019-08-22",
+                                    "2019-08-25~2019-08-29"
+                                ],
+                                "finalPrice": 139900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967616"
+                            },
+                            {
+                                "buyPrice": 179900,
+                                "dateRanges": [
+                                    "2019-07-05~2019-07-06",
+                                    "2019-07-12~2019-07-13",
+                                    "2019-07-19~2019-07-20",
+                                    "2019-07-26~2019-07-27",
+                                    "2019-08-02~2019-08-03",
+                                    "2019-08-09~2019-08-10",
+                                    "2019-08-16~2019-08-17",
+                                    "2019-08-23~2019-08-24",
+                                    "2019-08-30~2019-08-31"
+                                ],
+                                "finalPrice": 179900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967616"
+                            }
+                        ],
+                        "8558246:3622544;5919063:3266786;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 59900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-07-06",
+                                    "2019-07-08~2019-07-10",
+                                    "2019-07-14~2019-07-17",
+                                    "2019-07-21~2019-07-24",
+                                    "2019-07-28~2019-07-31",
+                                    "2019-08-04~2019-08-07",
+                                    "2019-08-11~2019-08-14",
+                                    "2019-08-18~2019-08-21",
+                                    "2019-08-30~2019-08-31"
+                                ],
+                                "finalPrice": 59900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902037"
+                            },
+                            {
+                                "buyPrice": 49900,
+                                "dateRanges": [
+                                    "2019-07-07",
+                                    "2019-08-25~2019-08-29"
+                                ],
+                                "finalPrice": 49900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902037"
+                            },
+                            {
+                                "buyPrice": 69900,
+                                "dateRanges": [
+                                    "2019-07-11~2019-07-13",
+                                    "2019-07-18~2019-07-20",
+                                    "2019-07-25~2019-07-27",
+                                    "2019-08-01~2019-08-03",
+                                    "2019-08-08~2019-08-10",
+                                    "2019-08-15~2019-08-17",
+                                    "2019-08-22~2019-08-24"
+                                ],
+                                "finalPrice": 69900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4182514902037"
+                            }
+                        ],
+                        "8558246:3622544;5919063:59904168;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 169900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-07-04",
+                                    "2019-07-07~2019-07-11",
+                                    "2019-07-14~2019-07-18",
+                                    "2019-07-21~2019-07-25",
+                                    "2019-07-28~2019-08-01",
+                                    "2019-08-04~2019-08-08",
+                                    "2019-08-11~2019-08-15",
+                                    "2019-08-18~2019-08-22",
+                                    "2019-08-25~2019-08-29"
+                                ],
+                                "finalPrice": 169900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967618"
+                            },
+                            {
+                                "buyPrice": 199900,
+                                "dateRanges": [
+                                    "2019-07-05~2019-07-06",
+                                    "2019-07-12~2019-07-13",
+                                    "2019-07-19~2019-07-20",
+                                    "2019-07-26~2019-07-27",
+                                    "2019-08-02~2019-08-03",
+                                    "2019-08-09~2019-08-10",
+                                    "2019-08-16~2019-08-17",
+                                    "2019-08-23~2019-08-24",
+                                    "2019-08-30~2019-08-31"
+                                ],
+                                "finalPrice": 199900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967618"
+                            }
+                        ],
+                        "8558246:27845;5919063:59904168;1000000:155792392-29400": [
+                            {
+                                "buyPrice": 5900,
+                                "dateRanges": [
+                                    "2019-07-03~2019-08-31"
+                                ],
+                                "finalPrice": 5900,
+                                "hasQuantity": true,
+                                "packageDesc": [],
+                                "packageTips": [],
+                                "skuId": "4253360967617"
+                            }
+                        ]
+                    },
+                    "skuShareInventory": false,
+                    "skuStrokeStatus": {
+                        "defaultDesc": "请选择出发地",
+                        "showStroke": true,
+                        "status": 0
+                    },
+                    "startDateTitle": "出发日期",
+                    "status": 0
+                },
+                "tag": "sku"
+            },
+            "brand": {
+                "data": {
+                    "cellColor": "#666666",
+                    "cells": [
+                        {
+                            "icon": "https://gw.alicdn.com/tps/TB1DCgkNVXXXXXlapXXXXXXXXXX-24-24.png",
+                            "title": "更改则赔付"
+                        },
+                        {
+                            "icon": "https://gw.alicdn.com/tps/TB1DCgkNVXXXXXlapXXXXXXXXXX-24-24.png",
+                            "title": "承诺不加价"
+                        },
+                        {
+                            "icon": "https://gw.alicdn.com/tps/TB1DCgkNVXXXXXlapXXXXXXXXXX-24-24.png",
+                            "title": "取消则赔付"
+                        }
+                    ],
+                    "titleColor": "#666666",
+                    "titleIcon": "https://gw.alicdn.com/tps/TB1_81_PXXXXXayXFXXXXXXXXXX-246-82.png",
+                    "titleText": "阿里旅行"
+                },
+                "tag": "brand"
+            },
+            "mileage": {
+                "data": {
+                    "desc": "最多可送1049飞猪里程，交易成功15天后发放，累积里程可抵现金、兑好礼！",
+                    "flayerTitle": "飞猪里程",
+                    "icon": "https://gw.alicdn.com/tfs/TB1MDmJh3MPMeJjy1XdXXasrXXa-135-36.png",
+                    "title": "最多可送1049飞猪里程",
+                    "titleColor": "#666666"
+                },
+                "tag": "mileage"
+            }
+        }
+    }
   "banner": [
     {
       "id": "0",
