@@ -4,7 +4,9 @@ import { Provider } from 'react-redux';
 import App from './App.js';
 import './styles/base.less';
 import store from './store';
+import axios from "axios";
 
+React.Component.prototype.axios = axios;
 ReactDOM.render(
   <Provider store={store} >
     <App />
