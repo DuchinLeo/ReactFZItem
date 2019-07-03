@@ -19,7 +19,7 @@ class Home extends Component {
       ]
     };
   }
-  render() {
+  render () {
     return (
       <HomeWrap>
         <HeaderWarp className="header">
@@ -75,7 +75,7 @@ const menu = (
     <Menu.Item>
       <div>
         <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" />
-        <NavLink to="/" className="menu-span">我的订单</NavLink>
+        <NavLink to="/market" className="menu-span">我的订单</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
