@@ -1,0 +1,146 @@
+@import '../../px2rem.scss';
+
+body,html{
+  height: 100%;
+}
+.header{
+  line-height: px2rem(44);
+  height: px2rem(44);
+  position: relative;
+}
+.logo{
+  width: px2rem(47);
+  height: px2rem(20);
+  background: url('../../images/logo.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 25%;
+  left: 44%;
+}
+.icon{
+  width: px2rem(24);
+  height: px2rem(24);
+  background: url('../../images/icon.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+.menu{
+  border: 0px solid black;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-shrink: 0;
+  right: px2rem(-10);
+  top: px2rem(8);
+  padding-top: px2rem(10);
+  -webkit-box-align: end;
+  align-items: flex-end;
+  div{
+    border: 0px solid black;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-shrink: 0;
+    background: #fff;
+    cursor: pointer;
+    height: px2rem(44);
+    width: px2rem(150);
+    align-items: center;
+    img{
+      display: flex;
+      width: px2rem(24);
+      height: px2rem(24);
+      margin-left: px2rem(12);
+      margin-right: px2rem(12);
+    }
+    .menu-span{
+      font-size: px2rem(15);
+      color: #333;
+    }
+  }
+  .menu-img{
+    display: flex;
+    width: px2rem(20);
+    height: px2rem(10);
+    position: absolute;
+    top: px2rem(-10);
+    right: px2rem(12);
+    opacity: 1;
+  }
+}
+.search{
+  position: absolute;
+  top: px2rem(44);
+  height: px2rem(44);
+  display: flex;
+  justify-content: center;
+  .search-txt{
+    width: px2rem(350);
+    height: px2rem(32);
+    outline: none;
+    border-top-left-radius: px2rem(50);
+    border-bottom-right-radius: px2rem(50);
+    border-bottom-left-radius: px2rem(50);
+    padding: px2rem(3) px2rem(7) px2rem(4) px2rem(33);
+    background: url(../../images/search.png) no-repeat px2rem(10) ;
+    background-color: #fff;
+    font-size: px2rem(15);
+  }
+}
+.hot{
+  position: absolute;
+  top: px2rem(88);
+  height: px2rem(36);
+  display: block;
+  padding: 0 px2rem(12) px2rem(12) px2rem(18);
+  box-sizing: border-box;
+  span{
+    font-size: px2rem(14);
+    color: #fff;
+  }
+}
+.banner{
+  position: absolute;
+  top: px2rem(124);
+  height: px2rem(90);
+  display: flex;
+  align-items: center;
+  padding: 0 px2rem(12);
+  .banner-list{
+    width: 94%;
+    height: px2rem(110);
+    background: #fff;
+    position: absolute;
+    top: 0;
+    border-radius: px2rem(10);
+  }
+  .ant-carousel .slick-dots li{
+    margin: 0 px2rem(5)
+  }
+  .ant-carousel .slick-dots li button{
+    display: block;
+    width: px2rem(8);
+    height: px2rem(8);
+    padding: 0;
+    color: transparent;
+    font-size: px2rem(8);
+    background: #FECF02;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.3s;
+  }
+  .ant-carousel .slick-dots{
+    position: absolute;
+    bottom: px2rem(20)
+  }
+}

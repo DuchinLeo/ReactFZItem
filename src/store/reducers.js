@@ -2,4 +2,4 @@
 import userLogin from '../views/login/store/reducer';
 
 
-export const user = userLogin;
+export const userinfo = userLogin;
