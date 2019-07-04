@@ -64,15 +64,15 @@
           border-color: rgb(226, 56, 4);
         }
 
-
         a {
           font-size: px2rem(14) !important;
           color: #666;
         }
         button {
+          color: #fff;
           width: 100%;
           height: px2rem(45);
-          font-size: px2rem(14) !important;
+          font-size: px2rem(16);
           background: -webkit-linear-gradient(
             left,
             rgb(236, 166, 166),
@@ -80,6 +80,10 @@
           ) !important;
           border: 0;
           border-radius: px2rem(16);
+        }
+        .login-form-button {
+          color: #fff;
+          font-size: px2rem(16) !important;
         }
       }
     }
