@@ -1411,34 +1411,3 @@
             }
         }
     }
-  "banner": [
-    {
-      "id": "0",
-      "img": "gw.alicdn.com/tfs/TB12zpMeEuF3KVjSZK9XXbVtXXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "1",
-      "img": "gw.alicdn.com/tfs/TB1D_pLeEKF3KVjSZFEXXXExFXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "2",
-      "img": "gw.alicdn.com/tfs/TB11vBCeEGF3KVjSZFoXXbmpFXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "3",
-      "img": "gw.alicdn.com/tfs/TB1umqMdv1G3KVjSZFkXXaK4XXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "4",
-      "img": "gw.alicdn.com/tfs/TB10MnyeaSs3KVjSZPiXXcsiVXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "5",
-      "img": "gw.alicdn.com/imgextra/i2/2075542807/O1CN01zdXOuV1WbeISyqjNq_!!2075542807.jpg_790x10000Q75.jpg_.webp"
-    },
-    {
-      "id": "6",
-      "img": "gw.alicdn.com/tfs/TB12i5MeHus3KVjSZKbXXXqkFXa-1125-352.jpg_790x10000Q75.jpg_.webp"
-    }
-  ]
-}
