@@ -92,6 +92,12 @@ class Whole extends Component {
 
   }
 
+  /*
+  *组件不会重新渲染，待尝试，路由使用高阶组件，通过高阶组件内部进行判断url地址的id变化，再带不同的内容过去
+  
+  */
+
+
   static getDerivedStateFromProps (props, state) {
     // console.log(props)
     console.log(state.data)
