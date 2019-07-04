@@ -1,0 +1,42 @@
+@import "../../px2rem.scss";
+
+.market-box {
+  width: 100%;
+  height: 100%;
+  .box-header {
+    width: 100%;
+    height: px2rem(40);
+    border: 0px solid black;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-shrink: 0;
+    justify-content: space-around;
+    .box-header-chin {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      a {
+        font-size: px2rem(14) !important;
+        color: #333 !important;
+        display: block;
+        line-height: px2rem(36);
+        height: px2rem(36);
+      }
+      .market-chin {
+        font-weight: 600;
+      }
+      .market-chin + span {
+        width: px2rem(40);
+        height: px2rem(4);
+        background: rgb(247, 210, 5);
+        display: block;
+      }
+    }
+  }
+}
