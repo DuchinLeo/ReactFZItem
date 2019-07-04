@@ -32,3 +32,9 @@ export const Banner = styled.div`
   width: 100%;
   background:#FECF02;
 `
+export const Tickets = styled.div`
+  width:100%;
+`
+export const Subentry = styled.div``
+
+export const Benefit = styled.div``

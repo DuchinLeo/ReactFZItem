@@ -14,7 +14,7 @@ message.config({
 
 class Login extends Component {
 
-  render () {
+  render() {
     const { getFieldDecorator } = this.props.form;
     return (
       <LoginWrap className="login-box-a">
@@ -134,7 +134,7 @@ const mapStateToProps = ({ login }) => (
 )
 
 const mapDispathToProps = (dispatch, props) => ({
-  handleUserinfo (values) {
+  handleUserinfo(values) {
     dispatch(actions.asyncUserinfo(values, props))
   }
 })

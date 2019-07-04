@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner } from './style';
+import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit } from './style';
 import { connect } from 'react-redux';
 import { Form, Dropdown, Menu, Input, Carousel } from 'antd'
 import './style.scss'
+import * as actions from './store/actionCreates'
+
+
 
 class Home extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       title: [
         "上海迪士尼乐园门票",
@@ -16,9 +18,15 @@ class Home extends Component {
         "上海迪士尼",
         "北京故宫博物馆门票",
         "马来西亚签证"
-      ]
-    };
+      ],
+      bannerList: []
+    }
   }
+
+  componentDidMount() {
+    this.props.getBannerList();
+  }
+
   render() {
     return (
       <HomeWrap>
@@ -40,33 +48,97 @@ class Home extends Component {
         </HotSearch>
         <Banner className="banner">
           <Carousel autoplay className="banner-list">
-            <div>
-              <h1>1</h1>
-            </div>
-            <div>
-              <h1>2</h1>
-            </div>
-            <div>
-              <h1>3</h1>
-            </div>
-            <div>
-              <h1>4</h1>
-            </div>
-            <div>
-              <h1>5</h1>
-            </div>
-            <div>
-              <h1>6</h1>
-            </div>
-            <div>
-              <h1>7</h1>
-            </div>
+            {
+              this.state.bannerList.map(item => {
+                return (
+                  <div key={item.id} >
+                    <img src={item.img} className="banner-item" />
+                  </div>
+                )
+              })
+            }
+            {/* <div><img src="https://gw.alicdn.com/tfs/TB108lWeL1G3KVjSZFkXXaK4XXa-1125-352.jpg_790x10000Q75.jpg" alt="" /></div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div> */}
           </Carousel>
         </Banner>
+        <Tickets className="tickets">
+          <NavLink to="/" className="tickets-item">
+            <img src="https://gw.alicdn.com/tfs/TB1JCcHCqmWBuNjy1XaXXXCbXXa-210-126.png_360x10000.jpg" alt="" />
+            <span>机票</span>
+          </NavLink>
+          <NavLink to="/" className="tickets-item">
+            <img src="https://gw.alicdn.com/tfs/TB1s51ECuOSBuNjy0FdXXbDnVXa-210-126.png_360x10000.jpg" alt="" />
+            <span>酒店</span>
+          </NavLink>
+          <NavLink to="/" className="tickets-item">
+            <img src="https://gw.alicdn.com/tfs/TB1BNE_wrZnBKNjSZFrXXaRLFXa-210-126.png_360x10000.jpg" alt="" />
+            <span>火车票</span>
+          </NavLink>
+          <NavLink to="/" className="tickets-item">
+            <img src="https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_360x10000.jpg" alt="" />
+            <span>汽车票</span>
+          </NavLink>
+          <NavLink to="/" className="tickets-item">
+            <img src="https://gw.alicdn.com/tfs/TB1aJ4MwHArBKNjSZFLXXc_dVXa-210-126.png_360x10000.jpg" alt="" />
+            <span>门票</span>
+          </NavLink>
+        </Tickets>
+        <Subentry className="subentry">
+          <NavLink to="/" className="sub">
+            <strong>出境游</strong>
+            <span>走遍全球</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>境内游</strong>
+            <span>精选路线</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>周边游</strong>
+            <span>乐享周末</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>飞猪购</strong>
+            <span>免税预购</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>签证/签注</strong>
+            <span>在现办理</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>境外上网</strong>
+            <span>信用免押</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>用车</strong>
+            <span>接送9折</span>
+          </NavLink>
+          <NavLink to="/" className="sub">
+            <strong>全部</strong>
+            <span>更多推荐</span>
+          </NavLink>
+        </Subentry>
+        <Benefit className="benefit">
+          <NavLink to="/" className="benefit-first">
+            <img src="https://gw.alicdn.com/tfs/TB1JMPzOsbpK1RjSZFyXXX_qFXa-239-76.png_360x10000.jpg" />
+            <span>专属福利天天领</span>
+          </NavLink>
+          <NavLink to="/" className="benefit-two">
+            <img src="https://gw.alicdn.com/tfs/TB17LZBCb9YBuNjy0FgXXcxcXXa-224-100.png_290x10000.jpg" alt="" />
+            <span>马上签到</span>
+          </NavLink>
+        </Benefit>
       </HomeWrap>
     );
   }
 }
+
+const MapBannerList = dispatch => ({
+  getBannerList() {
+    dispatch(actions.asyncBannerList());
+  }
+})
 // vant 的组件创建
 const HomeUI = Form.create({})(Home);
 
@@ -121,5 +193,5 @@ const menu = (
 );
 export default connect(
   null,
-  null
+  MapBannerList
 )(HomeUI)
