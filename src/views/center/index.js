@@ -8,7 +8,7 @@ import * as actions from './store/actionCreates'
 class Center extends Component {
   constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       visible: false,
       users:[],
       banner:[],
@@ -45,7 +45,7 @@ class Center extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
       <CenterWrap>
       <div>
@@ -166,23 +166,23 @@ class Center extends Component {
 
 const menu = (
   <Menu>
-  <Menu.Item>
-    <a>
-      购物车
+    <Menu.Item>
+      <a>
+        购物车
     </a>
-  </Menu.Item>
-  <Menu.Item>
-    <a>
-      购物车
+    </Menu.Item>
+    <Menu.Item>
+      <a>
+        购物车
     </a>
-  </Menu.Item>
-  <Menu.Item>
-    <a>
-      购物车
+    </Menu.Item>
+    <Menu.Item>
+      <a>
+        购物车
     </a>
-  </Menu.Item>
+    </Menu.Item>
   </Menu>
-  )
+)
 
 
 
