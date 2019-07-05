@@ -1285,14 +1285,6 @@
                                 "2019-07-07",
                                 "2019-08-25~2019-08-29"
                             ],
-                            "finalPrice": 49900
-                        },
-                        {
-                            "buyPrice": 49900,
-                            "dateRanges": [
-                                "2019-07-07",
-                                "2019-08-25~2019-08-29"
-                            ],
                             "finalPrice": 49900,
                             "hasQuantity": true,
                             "packageDesc": [],
@@ -1519,6 +1511,36 @@
             "id": "530700",
             "image": "https://img.alicdn.com/tfs/TB17l52RFXXXXchXpXXXXXXXXXX-750-750.png",
             "title": "丽江"
+        }
+    ],
+    "user": {
+        "username": "feizhu",
+        "password": "123456"
+    },
+    "shopdata": [
+        {
+            "id": "1",
+            "shop": "深圳城隍旅游专营店",
+            "state": "交易关闭",
+            "title": "【全体票】深圳世界之窗门票 全天包含夜场 日常成人票",
+            "form": "门票价格区间",
+            "formval": "区间4",
+            "forms": "门票种类",
+            "formsval": "成人票",
+            "tripdate": "2019-07-11",
+            "price": "210"
+        },
+        {
+            "id": "2",
+            "shop": "秦皇岛旭冉旅行社专营店",
+            "state": "待付款",
+            "title": "北京/天津-北戴河双动3天2晚自由行",
+            "form": "套餐类型",
+            "formval": "北京出发高档型酒店",
+            "forms": "出游人群",
+            "formsval": "成人",
+            "tripdate": "2019-07-12",
+            "price": "699"
         }
     ]
 }

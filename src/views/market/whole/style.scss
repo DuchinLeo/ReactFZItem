@@ -55,6 +55,16 @@
             font-size: px2rem(15);
             color: rgb(61, 61, 61);
           }
+          p {
+            font-size: px2rem(12);
+            color: rgb(165, 165, 165);
+            line-height: px2rem(17);
+            span {
+              font-size: px2rem(12);
+              color: rgb(165, 165, 165);
+              line-height: px2rem(17);
+            }
+          }
         }
         .whole-right {
           width: px2rem(57);
@@ -67,14 +77,35 @@
         }
       }
     }
-
     .whole-box-price {
       height: px2rem(40);
       padding-right: px2rem(12);
       box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      span:nth-child(1) {
+        color: rgb(61, 61, 61);
+        margin-right: px2rem(12);
+      }
+      span:nth-child(3) {
+        color: rgb(61, 61, 61);
+        font-size: px2rem(15);
+      }
     }
     .whole-box-del {
       height: px2rem(39.5);
+      justify-content: flex-end;
+      align-items: center;
+      display: flex;
+      button {
+        margin-right: px2rem(10);
+        width: px2rem(77);
+        height: px2rem(23);
+        background-color: #fff;
+        color: rgb(61, 61, 61);
+        border: rgb(61, 61, 61) px2rem(1) solid;
+      }
     }
   }
 }

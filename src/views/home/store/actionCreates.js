@@ -30,7 +30,7 @@ export const asyncBannerList = () => {
   return dispatch => {
     axios.get("http://localhost:3001/banner")
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         // 派发一个普通的动作，将数据写入到仓库中
         dispatch(onBannerList(response.data));
       })

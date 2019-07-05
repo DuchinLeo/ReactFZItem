@@ -14,7 +14,7 @@ message.config({
 
 class Login extends Component {
 
-  render() {
+  render () {
     const { getFieldDecorator } = this.props.form;
     return (
       <LoginWrap className="login-box-a">
@@ -86,11 +86,13 @@ class Login extends Component {
                 className="login-form-forgot"
                 href="/"
                 style={{ marginRight: "100px" }}
+                alt="短信验证码登陆"
               >
                 短信验证码登陆
             </a >
               <a className="login-form-forgot" href="/"
                 style={{ float: "right" }}
+                alt="免费注册"
               >
                 免费注册
             </a>
@@ -118,31 +120,38 @@ class Login extends Component {
       if (!err) {
         // 验证成功
         // console.log('Received values of form: ', values);
-        console.log(values);
+        // console.log(values);
         this.props.handleUserinfo(values);
-
       }
-
     });
   };
+
+  // componentDidMount () {
+  //   this.props.handleSearch()
+  // }
 }
 
-const mapStateToProps = ({ login }) => (
-  {
-    username: login.username
-  }
-)
+// const mapStateToProps = ({ login }) => (
+//   {
+//     username: login.username
+//   }
+// )
 
 const mapDispathToProps = (dispatch, props) => ({
-  handleUserinfo(values) {
+  handleUserinfo (values) {
     dispatch(actions.asyncUserinfo(values, props))
   }
+  // handleSearch () {
+  //   dispatch(actions.asyncSearch())
+  // }
 })
 
 // vant 的组件创建
 const LoginUI = Form.create({})(Login);
 
 export default connect(
-  null,
+  ({ userinfo }) => ({
+    user: userinfo.username
+  }),
   mapDispathToProps
 )(LoginUI)

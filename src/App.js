@@ -3,7 +3,7 @@ import Loadable from 'react-loadable';
 import AuthRoute from './utils/Auth';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { SpinWrap } from './style';
-import { Spin, Icon } from 'antd';
+import { Icon } from 'antd';
 
 const antIcon = <Icon type="loading" style={{ fontSize: 120 }} spin />;
 

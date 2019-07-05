@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { NavLink, Switch, Route, Redirect } from 'react-router-dom';
-
+import { connect } from 'react-redux';
 import Whole from './whole';
-import Obligation from './obligation';
 import './style.scss'
+
 
 class Market extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      arr: [1, 2, 3]
+      arr: [1, 2, 3],
+      data: {}
     };
   }
   render () {
@@ -18,7 +19,7 @@ class Market extends Component {
         <div className="box-header">
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfoa`}
+              to={`/market/orderInfoa/id=${2}`}
               activeClassName="market-chin"
             >全部
             </NavLink>
@@ -26,7 +27,7 @@ class Market extends Component {
           </div>
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfob/id=${1}&is=${2}`}
+              to={`/market/orderInfob/id=${2}`}
               activeClassName="market-chin"
             >待付款
             </NavLink>
@@ -34,7 +35,7 @@ class Market extends Component {
           </div>
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfoc/id=${1}&is=${2}`}
+              to={`/market/orderInfo`}
               activeClassName="market-chin"
             >处理中
             </NavLink>
@@ -42,7 +43,7 @@ class Market extends Component {
           </div>
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfod/id=${1}&is=${2}`}
+              to={`/market/orderInfo`}
               activeClassName="market-chin"
             >待出行
             </NavLink>
@@ -50,7 +51,7 @@ class Market extends Component {
           </div>
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfoe/id=${1}&is=${2}`}
+              to={`/market/orderInfo`}
               activeClassName="market-chin"
             >待评价
             </NavLink>
@@ -58,7 +59,7 @@ class Market extends Component {
           </div>
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfof/id=${1}&is=${2}`}
+              to={`/market/orderInfo`}
               activeClassName="market-chin"
             >退款/售后
             </NavLink>
@@ -67,17 +68,46 @@ class Market extends Component {
         </div>
         <Switch>
           <Route path={`/market/orderInfoa`} component={Whole} />
-          <Route path={`/market/orderInfob`} component={Obligation} />
-          <Route path={`/market/orderInfoc`} component={Obligation} />
-          <Route path={`/market/orderInfod`} component={Obligation} />
-          <Route path={`/market/orderInfoe`} component={Obligation} />
-          <Route path={`/market/orderInfof`} component={Obligation} />
-          <Redirect to='/market/orderInfoa' />
+          <Route path={`/market/orderInfob`} component={Whole} />
+          <Route path={`/market/orderInfoc`} component={Whole} />
+          <Route path={`/market/orderInfod`} component={Whole} />
+          <Route path={`/market/orderInfoe`} component={Whole} />
+          <Route path={`/market/orderInfof`} component={Whole} />
+          <Redirect to={`/market/orderInfoa`} />
         </Switch>
       </div>
     );
   }
+
+  // static getDerivedStateFromProps (props, state) {
+  //   console.log(props)
+  //   console.log(state)
+  // }
+
+  componentDidMount () {
+    // console.log(this.props.orderdata)
+
+    if (this.props.orderdata) {
+      window.localStorage.setItem('market', JSON.stringify(this.props.orderdata))
+      this.setState({
+        data: this.props.orderdata
+      })
+    } else {
+      let data = JSON.parse(window.localStorage.getItem('market'));
+      this.setState({
+        data
+      })
+    }
+  }
+
 }
 
+export default connect(
+  ({ userinfo }) => {
+    return {
+      orderdata: userinfo.orderdata
+    }
+  },
+  null
+)(Market)
 
-export default Market;
