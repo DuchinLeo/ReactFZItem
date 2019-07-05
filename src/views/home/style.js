@@ -38,3 +38,9 @@ export const Tickets = styled.div`
 export const Subentry = styled.div``
 
 export const Benefit = styled.div``
+
+export const Find = styled.div``
+
+export const Travel = styled.div``
+
+export const TravelList = styled.div``

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit } from './style';
+import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit, Find, Travel, TravelList } from './style';
 import { connect } from 'react-redux';
 import { Form, Dropdown, Menu, Input, Carousel } from 'antd'
 import './style.scss'
@@ -14,18 +14,23 @@ class Home extends Component {
     this.state = {
       title: [
         "上海迪士尼乐园门票",
-        "日本签证",
-        "上海迪士尼",
-        "北京故宫博物馆门票",
-        "马来西亚签证"
       ],
-      bannerList: []
+      bannerList: [],
+      find: [],
+      ticket: [],
+      sift: [],
+      travel: []
     }
   }
 
   componentDidMount() {
     this.props.getBannerList();
+    this.props.findData();
+    this.props.ticketData();
+    this.props.siftData();
+    this.props.travelData();
   }
+
 
   render() {
     return (
@@ -43,24 +48,19 @@ class Home extends Component {
         </Search>
         <HotSearch className="hot">
           <span>热搜</span>
-          <span>{this.state.title[Math.random() * this.state.title.length]}</span>
-          <span></span>
+          <span className="title">{this.state.title}</span>
         </HotSearch>
         <Banner className="banner">
           <Carousel autoplay className="banner-list">
             {
-              this.state.bannerList.map(item => {
+              this.props.bannerList.map(item => {
                 return (
                   <div key={item.id} >
-                    <img src={item.img} className="banner-item" />
+                    <img src={item.img} ait="" title="" className="banner-item" />
                   </div>
                 )
               })
             }
-            {/* <div><img src="https://gw.alicdn.com/tfs/TB108lWeL1G3KVjSZFkXXaK4XXa-1125-352.jpg_790x10000Q75.jpg" alt="" /></div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div> */}
           </Carousel>
         </Banner>
         <Tickets className="tickets">
@@ -69,19 +69,19 @@ class Home extends Component {
             <span>机票</span>
           </NavLink>
           <NavLink to="/" className="tickets-item">
-            <img src="https://gw.alicdn.com/tfs/TB1s51ECuOSBuNjy0FdXXbDnVXa-210-126.png_360x10000.jpg" alt="" />
+            <img src="https://gw.alicdn.com/tfs/TB1s51ECuOSBuNjy0FdXXbDnVXa-210-126.png_360x10000.jpg" alt="" title="" />
             <span>酒店</span>
           </NavLink>
           <NavLink to="/" className="tickets-item">
-            <img src="https://gw.alicdn.com/tfs/TB1BNE_wrZnBKNjSZFrXXaRLFXa-210-126.png_360x10000.jpg" alt="" />
+            <img src="https://gw.alicdn.com/tfs/TB1BNE_wrZnBKNjSZFrXXaRLFXa-210-126.png_360x10000.jpg" alt="" title="" />
             <span>火车票</span>
           </NavLink>
           <NavLink to="/" className="tickets-item">
-            <img src="https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_360x10000.jpg" alt="" />
+            <img src="https://gw.alicdn.com/tfs/TB1pN01wsUrBKNjSZPxXXX00pXa-210-126.png_360x10000.jpg" alt="" title="" />
             <span>汽车票</span>
           </NavLink>
           <NavLink to="/" className="tickets-item">
-            <img src="https://gw.alicdn.com/tfs/TB1aJ4MwHArBKNjSZFLXXc_dVXa-210-126.png_360x10000.jpg" alt="" />
+            <img src="https://gw.alicdn.com/tfs/TB1aJ4MwHArBKNjSZFLXXc_dVXa-210-126.png_360x10000.jpg" alt="" title="" />
             <span>门票</span>
           </NavLink>
         </Tickets>
@@ -121,14 +121,83 @@ class Home extends Component {
         </Subentry>
         <Benefit className="benefit">
           <NavLink to="/" className="benefit-first">
-            <img src="https://gw.alicdn.com/tfs/TB1JMPzOsbpK1RjSZFyXXX_qFXa-239-76.png_360x10000.jpg" />
+            <img src="https://gw.alicdn.com/tfs/TB1JMPzOsbpK1RjSZFyXXX_qFXa-239-76.png_360x10000.jpg" alt="" title="" />
             <span>专属福利天天领</span>
           </NavLink>
           <NavLink to="/" className="benefit-two">
-            <img src="https://gw.alicdn.com/tfs/TB17LZBCb9YBuNjy0FgXXcxcXXa-224-100.png_290x10000.jpg" alt="" />
+            <img src="https://gw.alicdn.com/tfs/TB17LZBCb9YBuNjy0FgXXcxcXXa-224-100.png_290x10000.jpg" alt="" title="" />
             <span>马上签到</span>
           </NavLink>
         </Benefit>
+        <Find className="find">
+          <div className="find-contrion">
+            <NavLink to="/" className="find-left">
+              <div className="find-left-top">
+                <img src={this.props.find.titleImage} alt="" title="" />
+                <div className="time">
+                  <span className="data">{this.props.find.day}</span>
+                  <span className="month">{this.props.find.month}</span>
+                </div>
+              </div>
+              <p>{this.props.find.subTitle}</p>
+              <div className="find-left-bottom">
+                <div>
+                  <span>{this.props.find.commentCount}</span>
+                  <span>{this.props.find.titleLabel}</span>
+                </div>
+              </div>
+              <img src={this.props.find.image} alt="" title="" />
+            </NavLink>
+            <NavLink to="/" className="find-right-top">
+              <div>
+                <img className="cztm" src={this.props.ticket.titleImage} alt="" title="" />
+              </div>
+              <p>
+                <strong>{this.props.ticket.depCityName}</strong>
+                <img src={this.props.ticket.lineImage} alt="" title="" />
+                <strong>{this.props.ticket.arrCityName}</strong>
+                <span>{this.props.ticket.flightType}</span>
+              </p>
+              <div className="price">
+                <div>
+                  <span>￥</span>
+                  <span>{this.props.ticket.minItemPrice}</span>
+                  <span>{this.props.ticket.titleLabel}</span>
+                </div>
+              </div>
+              <img src={this.props.ticket.coverImage} alt="" title="" className="find-right-bg" />
+            </NavLink>
+            <NavLink to="/" className="find-right-bottom">
+              <img src={this.props.sift.coverImage} alt="" title="" />
+              <p>{this.props.sift.subTitle}</p>
+              <div>
+                <span>￥</span>
+                <span>{this.props.sift.minItemPrice}</span>
+                <span>{this.props.sift.titleLabel}</span>
+              </div>
+            </NavLink>
+          </div>
+        </Find>
+        <Travel className="travel">
+          <h2>当季旅行地</h2>
+          <span>探索更多目的地 ></span>
+        </Travel>
+        <TravelList className="travellist" >
+          <div className="travellist-container">
+            {/* <div className="travellist-item" key={this.props.travel.id}>
+              <img src={this.props.travel.image} alt="" />
+              <strong>{this.props.travel.title}</strong>
+            </div> */}
+            {
+              this.props.travel.map(item => {
+                return <div className="travellist-item" key={item.id}>
+                  <img src={item.image} alt="" />
+                  <strong>{item.title}</strong>
+                </div>
+              })
+            }
+          </div>
+        </TravelList>
       </HomeWrap>
     );
   }
@@ -137,8 +206,22 @@ class Home extends Component {
 const MapBannerList = dispatch => ({
   getBannerList() {
     dispatch(actions.asyncBannerList());
+  },
+  findData() {
+    dispatch(actions.asyncFindData());
+  },
+  ticketData() {
+    dispatch(actions.asyncTicketData());
+  },
+  siftData() {
+    dispatch(actions.asyncSiftData());
+  },
+  travelData() {
+    dispatch(actions.asyncTravelData());
   }
 })
+
+
 // vant 的组件创建
 const HomeUI = Form.create({})(Home);
 
@@ -146,52 +229,58 @@ const menu = (
   <Menu className="menu">
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" alt="" title="" />
         <NavLink to="/market" className="menu-span">我的订单</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1TDyrdogQMeJjy0FgXXc5dXXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1TDyrdogQMeJjy0FgXXc5dXXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">我的行程</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1p3umdgoQMeJjy1XaXXcSsFXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1p3umdgoQMeJjy1XaXXcSsFXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">我的收藏</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1NWupdgMPMeJjy1XbXXcwxVXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1NWupdgMPMeJjy1XbXXcwxVXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">我的红包</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1hdzlDSrqK1RjSZK9XXXyypXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1hdzlDSrqK1RjSZK9XXXyypXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">会员中心</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1h4utdgoQMeJjy0FoXXcShVXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1h4utdgoQMeJjy0FoXXcShVXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">购物车</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1XAOHRpzqK1RjSZFvXXcB7VXa-48-48.png" />
+        <img src="https://gw.alicdn.com/tfs/TB1XAOHRpzqK1RjSZFvXXcB7VXa-48-48.png" alt="" title="" />
         <NavLink to="/" className="menu-span">联系飞猪</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
-      <img src="https://gw.alicdn.com/tfs/TB12O86bXYqK1RjSZLeXXbXppXa-44-20.png" className="menu-img" />
+      <img src="https://gw.alicdn.com/tfs/TB12O86bXYqK1RjSZLeXXbXppXa-44-20.png" className="menu-img" alt="" title="" />
     </Menu.Item>
   </Menu>
 );
 export default connect(
-  null,
+  ({ bannerImg }) => ({
+    bannerList: bannerImg.bannerList,
+    find: bannerImg.find,
+    ticket: bannerImg.ticket,
+    sift: bannerImg.sift,
+    travel: bannerImg.travel
+  }),
   MapBannerList
 )(HomeUI)
