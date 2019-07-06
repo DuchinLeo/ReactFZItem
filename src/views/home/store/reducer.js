@@ -26,7 +26,7 @@ export default (state = initState, action) => {
   }
   if (action.type === Types.SET_TRAVEL_DATA) {
     newState.travel = action.data;
-    console.log(newState)
+    // console.log(newState)
   }
   return newState;
 }

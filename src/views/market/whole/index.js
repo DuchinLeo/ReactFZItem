@@ -22,9 +22,9 @@ class Whole extends Component {
           "price": ""
         }
       ]
-    };
-
+    }
   }
+
   render () {
     return (
       this.state.data.map((item, index) => {
@@ -94,60 +94,29 @@ class Whole extends Component {
 
   /*
   *组件不会重新渲染，待尝试，路由使用高阶组件，通过高阶组件内部进行判断url地址的id变化，再带不同的内容过去
-  
+
   */
 
 
   static getDerivedStateFromProps (props, state) {
-    // console.log(props)
-    console.log(state.data)
-    // console.log(state.data[0].id)
+    console.log(props)
+    if (props.data) {
+      return {
+        data: props.data
+      };
+    }
+    if (!props.data) {
+      let data = JSON.parse(window.localStorage.getItem('data'))
+      return {
+        data: data
+      };
+    }
+    return null;
   }
 
   componentDidMount () {
-    // 把字符串分隔成数组，再倒序，拿第一个
-    let id = this.props.location.search.split('=').reverse()[0];
-    // console.log(id)
-    if (this.props.orderdata) {
-      window.localStorage.setItem('market', JSON.stringify(this.props.orderdata))
-      // console.log(id)
-      switch (id) {
-        case 1:
-          this.setState({
-            data: [this.props.orderdata[0]]
-          })
-          break;
-        case 2:
-          this.setState({
-            data: [this.props.orderdata[1]]
-          })
-          break;
-        default:
-          this.setState({
-            data: [this.props.orderdata[1]]
-          })
-      }
-      console.log(this.state.data)
-    } else {
-      let orderdata = JSON.parse(window.localStorage.getItem('market'));
-      // console.log(orderdata)
-      switch (id) {
-        case 1:
-          this.setState({
-            data: [orderdata[0]]
-          })
-          break;
-        case 2:
-          this.setState({
-            data: [orderdata[1]]
-          })
-          break;
-        default:
-          this.setState({
-            data: [orderdata[1]]
-          })
-      }
-      console.log(this.state.data)
+    if (this.props.data) {
+      window.localStorage.setItem('data', JSON.stringify(this.props.data))
     }
   }
 }
@@ -155,7 +124,8 @@ class Whole extends Component {
 export default connect(
   ({ userinfo }) => {
     return {
-      orderdata: userinfo.orderdata
+      orderderAll: userinfo.orderAll,
+      orderObligation: userinfo.orderObligationl
     }
   },
   null

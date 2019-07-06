@@ -23,7 +23,7 @@ class Home extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.props.getBannerList();
     this.props.findData();
     this.props.ticketData();
@@ -32,7 +32,7 @@ class Home extends Component {
   }
 
 
-  render() {
+  render () {
     return (
       <HomeWrap>
         <HeaderWarp className="header">
@@ -204,19 +204,19 @@ class Home extends Component {
 }
 
 const MapBannerList = dispatch => ({
-  getBannerList() {
+  getBannerList () {
     dispatch(actions.asyncBannerList());
   },
-  findData() {
+  findData () {
     dispatch(actions.asyncFindData());
   },
-  ticketData() {
+  ticketData () {
     dispatch(actions.asyncTicketData());
   },
-  siftData() {
+  siftData () {
     dispatch(actions.asyncSiftData());
   },
-  travelData() {
+  travelData () {
     dispatch(actions.asyncTravelData());
   }
 })
@@ -229,48 +229,48 @@ const menu = (
   <Menu className="menu">
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" alt="我的行程" title="我的行程" />
         <NavLink to="/market" className="menu-span">我的订单</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1TDyrdogQMeJjy0FgXXc5dXXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1TDyrdogQMeJjy0FgXXc5dXXa-48-48.png" alt="我的行程" title="我的行程" />
         <NavLink to="/" className="menu-span">我的行程</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1p3umdgoQMeJjy1XaXXcSsFXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1p3umdgoQMeJjy1XaXXcSsFXa-48-48.png" alt="我的收藏" title="我的收藏" />
         <NavLink to="/" className="menu-span">我的收藏</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1NWupdgMPMeJjy1XbXXcwxVXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1NWupdgMPMeJjy1XbXXcwxVXa-48-48.png" alt="我的红包" title="我的红包" />
         <NavLink to="/" className="menu-span">我的红包</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1hdzlDSrqK1RjSZK9XXXyypXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1hdzlDSrqK1RjSZK9XXXyypXa-48-48.png" alt="会员中心" title="会员中心" />
         <NavLink to="/" className="menu-span">会员中心</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1h4utdgoQMeJjy0FoXXcShVXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1h4utdgoQMeJjy0FoXXcShVXa-48-48.png" alt="购物车" title="购物车" />
         <NavLink to="/" className="menu-span">购物车</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
       <div>
-        <img src="https://gw.alicdn.com/tfs/TB1XAOHRpzqK1RjSZFvXXcB7VXa-48-48.png" alt="" title="" />
+        <img src="https://gw.alicdn.com/tfs/TB1XAOHRpzqK1RjSZFvXXcB7VXa-48-48.png" alt="联系飞猪" title="联系飞猪" />
         <NavLink to="/" className="menu-span">联系飞猪</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
-      <img src="https://gw.alicdn.com/tfs/TB12O86bXYqK1RjSZLeXXbXppXa-44-20.png" className="menu-img" alt="" title="" />
+      <img src="https://gw.alicdn.com/tfs/TB12O86bXYqK1RjSZLeXXbXppXa-44-20.png" className="menu-img" alt="1" title="1" />
     </Menu.Item>
   </Menu>
 );

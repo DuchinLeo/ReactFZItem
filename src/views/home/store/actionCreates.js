@@ -59,7 +59,7 @@ export const asyncSiftData = () => {
   return dispatch => {
     axios.get("http://localhost:3001/sift")
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         dispatch(onSiftData(response.data))
       })
   }
@@ -68,7 +68,7 @@ export const asyncTravelData = () => {
   return dispatch => {
     axios.get("http://localhost:3001/travel")
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         dispatch(onTravelData(response.data))
       })
   }

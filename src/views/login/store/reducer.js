@@ -14,7 +14,8 @@ export default (state = initState, action) => {
   if (action.type === Types.GET_ORDER) {
     let props = action.data[1];
     let orderData = action.data[0]
-    newState.orderdata = orderData
+    newState.orderAll = [orderData[0]]
+    newState.orderObligation = [orderData[1]]
     // 判断是否是某个页面跳转过来的，跳回去,props.location.state.redirect是路由跳转过来的时候带的数据
     let redirect = props.location.state ? props.location.state.redirect : '/';
 

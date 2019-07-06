@@ -5,6 +5,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 class AuthRoute extends Component {
   render () {
+
     let { component: Component, userinfo, ...rest } = this.props;
     let user = JSON.parse(window.localStorage.getItem('user'));
     return (
