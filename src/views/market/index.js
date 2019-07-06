@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Whole from './whole';
+import MarktChin from '../../utils/MarketChin'
 import './style.scss'
 
 
@@ -19,7 +20,7 @@ class Market extends Component {
         <div className="box-header">
           <div className="box-header-chin">
             <NavLink
-              to={`/market/orderInfoa/id=${2}`}
+              to={`/market/orderInfoa/id=${1}`}
               activeClassName="market-chin"
             >全部
             </NavLink>
@@ -67,8 +68,8 @@ class Market extends Component {
           </div>
         </div>
         <Switch>
-          <Route path={`/market/orderInfoa`} component={Whole} />
-          <Route path={`/market/orderInfob`} component={Whole} />
+          <MarktChin path={`/market/orderInfoa`} component={Whole} id={1} />
+          <MarktChin path={`/market/orderInfob`} component={Whole} id={2} />
           <Route path={`/market/orderInfoc`} component={Whole} />
           <Route path={`/market/orderInfod`} component={Whole} />
           <Route path={`/market/orderInfoe`} component={Whole} />

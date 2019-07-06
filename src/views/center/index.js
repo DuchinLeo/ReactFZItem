@@ -4,13 +4,14 @@ import { connect } from 'react-redux';
 import { Form, Carousel, Icon, Menu, Dropdown, BackTop, Drawer, Button, message } from 'antd'
 import './style.scss'
 import * as actions from './store/actionCreates'
+import { black } from 'ansi-colors';
 
 class Center extends Component {
   constructor(props) {
     super(props);
     this.state = {
       visible: false,
-      drawType: [1, 2, 3]
+      drawType: [0, 1, 2, 3]
     }
 
   }
@@ -44,7 +45,7 @@ class Center extends Component {
           <div className="zy">自由行</div>
           <Dropdown overlay={menu} placement="bottomLeft">
             <a className="ant-dropdown-link">
-            <Icon type="shopping-cart" />
+              <Icon type="shopping-cart" />
             </a>
           </Dropdown>
           <div className="mod-price">
@@ -78,16 +79,15 @@ class Center extends Component {
                 <span className="brand_jt">></span>
               </div>
             </div>
-            <Drawer
-              placement="right"
-              closable={false}
-              onClose={this.onClose}
-              visible={this.state.visible}
-              placement="bottom"
-              mask
-            >
-              {
-                this.state.drawType === 1 ?
+            {
+              this.state.drawType === 1 ?
+                <Drawer
+                  closable={false}
+                  onClose={this.onClose}
+                  visible={this.state.visible}
+                  placement="bottom"
+                  mask
+                >
                   <div>
                     <div className="brand_top"> <img src={this.props.brand.titleIcon} className="brand_fw" />|
       <span>服务说明</span></div>
@@ -105,8 +105,16 @@ class Center extends Component {
                       完成
             </Button>
                   </div>
-                  :
-                  this.state.drawType === 2 ?
+                </Drawer>
+                :
+                this.state.drawType === 2 ?
+                  <Drawer
+                    closable={false}
+                    onClose={this.onClose}
+                    visible={this.state.visible}
+                    placement="bottom"
+                    mask
+                  >
                     <div>
                       {this.props.shopCoupons.map((item, index) => {
                         return (
@@ -127,19 +135,56 @@ class Center extends Component {
                         完成
             </Button>
                     </div>
-                    : <div className="lc">
-                      <p>{this.props.mileage.flayerTitle}</p>
-                      <span>{this.props.mileage.desc}</span>
-                      <Button onClick={this.onClose} type="primary" id="btn_okk">
-                        完成
+                  </Drawer>
+                  :
+                  this.state.drawType === 3 ?
+                    <Drawer
+                      closable={false}
+                      onClose={this.onClose}
+                      visible={this.state.visible}
+                      placement="bottom"
+                      mask
+                    >
+                      <div className="lc">
+                        <p>{this.props.mileage.flayerTitle}</p>
+                        <span>{this.props.mileage.desc}</span>
+                        <Button onClick={this.onClose} type="primary" id="btn_okk">
+                          完成
             </Button>
-                    </div>
-              }
+                      </div>
+                    </Drawer>
+                    :
+                    <Drawer
+                      closable={false}
+                      onClose={this.onClose}
+                      visible={this.state.visible}
+                      placement="right"
+                      width="100%"
+                    >
+                        <div onClick={this.onClose} type="primary"  className="gwc_fh">
+                        <Icon type="arrow-left" />
+                      </div>
+                      <div className="dididi2">
+                        <div className="di_letf">
+                          <span><Icon type="aliwangwang" className="di_icon" />
+                            <p>客服</p></span>
+                          <span>
+                            <Icon type="shop" className="di_icon" />
+                            <p>店铺</p>
+                          </span>
+                          <span>
+                            <Icon type="star" className="di_icon" />
+                            <p>收藏</p>
+                          </span>
+                          <div className="di_btn1"><p>加入购物车</p></div>
+                          <div className="di_btn2"><p>立即购买</p></div>
+                        </div>
+                      </div>
+                    </Drawer>
+            }
 
 
-            </Drawer>
           </div>
-
           <div className="mod-itemextra">
             <div type="primary" onClick={this.showDrawer.bind(this, 2)}>
               <div className="cell-arrow">
@@ -191,17 +236,28 @@ class Center extends Component {
               })
             }
           </div>
+          <div className="mod-selectsku">
+            <div className="selectsku_gwc">
+            <p> <Icon type="environment"  className="selectsku_icon"/>
+              <span>请选择出发地</span>
+              <a>已选 成人</a>
+              </p>
+              <p>
+              <i type="primary" onClick={this.showDrawer.bind(this, 0)}>全部团期 ></i>
+              </p>
+            </div>
+          </div>
           <div className="dididi">
-          <div className="di_letf">
-            <span><Icon type="aliwangwang" className="di_icon" />
-            <p>客服</p></span>
+            <div className="di_letf">
+              <span><Icon type="aliwangwang" className="di_icon" />
+                <p>客服</p></span>
               <span>
-              <Icon type="shop"  className="di_icon" />
-              <p>店铺</p>
+                <Icon type="shop" className="di_icon" />
+                <p>店铺</p>
               </span>
               <span>
-              <Icon type="star"  className="di_icon" />
-              <p>收藏</p>
+                <Icon type="star" className="di_icon" />
+                <p>收藏</p>
               </span>
               <div className="di_btn1"><p>加入购物车</p></div>
               <div className="di_btn2"><p>立即购买</p></div>
