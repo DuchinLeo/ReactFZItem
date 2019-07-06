@@ -22,6 +22,9 @@ class MarktChin extends Component {
           if (id) {
             if (id === 1) {
               if (orderAll) {
+                if (orderAll.length < 2) {
+                  orderAll.push(...orderObligation)
+                }
                 return (
                   <Component {...routeProps} data={orderAll} />
                 )
