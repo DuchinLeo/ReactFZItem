@@ -1,6 +1,7 @@
 @import "../../../px2rem.scss";
 
 .order-Info-whole {
+  overflow-y: auto;
   width: 100%;
   height: 100%;
   font-size: px2rem(12);
@@ -50,7 +51,7 @@
           width: px2rem(250);
           height: px2rem(74);
           .whole-center-title {
-            height: px2rem(42);
+            min-height: px2rem(21);
             line-height: px2rem(21);
             font-size: px2rem(15);
             color: rgb(61, 61, 61);
@@ -84,6 +85,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      border-bottom: rgb(241, 241, 241) solid px2rem(2);
       span:nth-child(1) {
         color: rgb(61, 61, 61);
         margin-right: px2rem(12);
@@ -106,6 +108,111 @@
         color: rgb(61, 61, 61);
         border: rgb(61, 61, 61) px2rem(1) solid;
       }
+    }
+  }
+}
+
+.order-null-box {
+  width: 100%;
+  height: 100%;
+  font-size: px2rem(12);
+  background: rgb(247, 247, 247);
+  .order-null {
+    width: px2rem(375);
+    height: 100%;
+    box-sizing: border-box;
+    padding: px2rem(116) px2rem(12) 0 px2rem(12);
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .order-null-img {
+      // display: block;
+      // margin: 0 auto;
+      width: px2rem(160);
+      height: px2rem(160);
+    }
+    .order-null-text {
+      font-size: px2rem(15);
+      color: #999;
+      width: px2rem(120);
+      height: px2rem(20);
+    }
+    .order-null-refresh {
+      width: px2rem(120);
+      height: px2rem(36);
+      margin-top: px2rem(30);
+      background: #fff;
+      text-align: center;
+      line-height: px2rem(36);
+      font-size: px2rem(15);
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: px2rem(50);
+  width: 100%;
+  background-color: #505050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  .footer-img {
+    width: px2rem(24);
+    height: px2rem(21);
+    margin-top: px2rem(4);
+    img {
+      width: px2rem(20);
+      height: px2rem(20);
+    }
+  }
+  .footer-text {
+    width: px2rem(48);
+    height: px2rem(16);
+    font-size: px2rem(12);
+    color: #fff;
+  }
+}
+
+// 抽屉的位置
+.ant-drawer-content-wrapper {
+  bottom: px2rem(48) !important;
+}
+
+.drawer-box {
+  height: 100%;
+  width: 100%;
+  padding: 0 px2rem(12);
+  background: #fff;
+  h2 {
+    font-size: px2rem(16);
+    color: rgb(61, 61, 61);
+    height: px2rem(40);
+    line-height: px2rem(40);
+  }
+  .drawer-box-btu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    div {
+      flex: 0 0 24%;
+      height: px2rem(32);
+      display: flex;
+      justify-content: center;
+      margin-bottom: px2rem(4);
+    }
+    button {
+      width: px2rem(70);
+      height: px2rem(32);
+      font-size: px2rem(14);
+      color: rgb(61, 61, 61);
+      line-height: px2rem(32);
     }
   }
 }
