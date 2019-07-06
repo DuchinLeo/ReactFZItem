@@ -44,3 +44,7 @@ export const Find = styled.div``
 export const Travel = styled.div``
 
 export const TravelList = styled.div``
+
+export const TitleWarp = styled.div``
+
+export const Live = styled.div``

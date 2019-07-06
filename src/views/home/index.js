@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit, Find, Travel, TravelList } from './style';
+import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit, Find, Travel, TravelList, TitleWarp, Live } from './style';
 import { connect } from 'react-redux';
 import { Form, Dropdown, Menu, Input, Carousel } from 'antd'
 import './style.scss'
@@ -19,7 +19,8 @@ class Home extends Component {
       find: [],
       ticket: [],
       sift: [],
-      travel: []
+      travel: [],
+      live: []
     }
   }
 
@@ -29,6 +30,7 @@ class Home extends Component {
     this.props.ticketData();
     this.props.siftData();
     this.props.travelData();
+    this.props.liveData();
   }
 
 
@@ -184,10 +186,6 @@ class Home extends Component {
         </Travel>
         <TravelList className="travellist" >
           <div className="travellist-container">
-            {/* <div className="travellist-item" key={this.props.travel.id}>
-              <img src={this.props.travel.image} alt="" />
-              <strong>{this.props.travel.title}</strong>
-            </div> */}
             {
               this.props.travel.map(item => {
                 return <div className="travellist-item" key={item.id}>
@@ -198,6 +196,24 @@ class Home extends Component {
             }
           </div>
         </TravelList>
+        <TitleWarp className="titlewarp">
+          <h2>旅行直播</h2>
+          <span>达人带你看世界</span>
+        </TitleWarp>
+        <Live className="live">
+          {
+            this.props.live.map(item => {
+              return <NavLink to="/" className="live-item" key={item.liveId}>
+                <img src={item.image} alt="" title="" />
+                <div>
+                  <span>{item.title}</span>
+                  <span>{item.statusText}</span>
+                  <span>{item.viewCount}</span>
+                </div>
+              </NavLink>
+            })
+          }
+        </Live>
       </HomeWrap>
     );
   }
@@ -218,6 +234,9 @@ const MapBannerList = dispatch => ({
   },
   travelData() {
     dispatch(actions.asyncTravelData());
+  },
+  liveData() {
+    dispatch(actions.asyncLiveData());
   }
 })
 
@@ -280,7 +299,8 @@ export default connect(
     find: bannerImg.find,
     ticket: bannerImg.ticket,
     sift: bannerImg.sift,
-    travel: bannerImg.travel
+    travel: bannerImg.travel,
+    live: bannerImg.live
   }),
   MapBannerList
 )(HomeUI)
