@@ -7,7 +7,8 @@ const initState = {
   ticket: [],
   sift: [],
   travel: [],
-  live: []
+  live: [],
+  commodity: []
 }
 
 export default (state = initState, action) => {
@@ -32,10 +33,11 @@ export default (state = initState, action) => {
   }
   if (action.type === Types.SET_LIVE_DATA) {
     newState.live = action.data
+  }
+
+  if (action.type === Types.SET_COMMODITY_DATA) {
+    newState.commodity = action.data
     console.log(newState)
-
-    
-
   }
   return newState;
 }

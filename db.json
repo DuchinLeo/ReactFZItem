@@ -1569,5 +1569,12 @@
             "viewCount": "1300观看",
             "image": "https://gw.alicdn.com/tfscom/i1/O1CN01d4P48D1RqhEQx0BIt_!!0-dgshop.jpg"
         }
-    ]
+    ],
+    "commodity": {
+        "title": "北京 自由行",
+        "image": "https://img.alicdn.com/bao/uploaded/i2/TB1l.YSSwHqK1RjSZFPHTkwapXa_112042.jpg",
+        "price": "429-2099",
+        "sold": "月销 88 笔",
+        "conter": "北京/天津-北戴河双动3天2晚自由行"
+    }
 }

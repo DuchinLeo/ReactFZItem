@@ -13,8 +13,7 @@ const initState = {
   shopCoupons:[],
   mileage:{},
   serviceTimeInfo:[],
-  mn:[],
-
+  mn:[]
 }
 
 // 把这个仓库的数据暴露出去,在总仓库里面拿到他
@@ -25,6 +24,7 @@ export default (state = initState, action) => {
   if (action.type === Types.GET_BANNER) {
     console.log(action.value)
     newState.username = action.value
+
     newState.banner=action.value.banner.data.pics
     newState.price=action.value.price.data.mainPrice
     newState.title=action.value.title.data.itemTitle
@@ -36,8 +36,10 @@ export default (state = initState, action) => {
     newState.mileage=action.value.mileage.data
     newState.serviceTimeInfo=action.value.serviceTimeInfo.data.infos
     newState.mn=action.value.mn.data
+
+    
   }
 
-// 返回保存的数据
+  // 返回保存的数据
   return newState;
 }

@@ -31,6 +31,12 @@ export const onLiveData = data => ({
   data
 })
 
+export const onCommodityData = data => ({
+  type: Types.SET_COMMODITY_DATA,
+  data
+})
+
+
 export const asyncBannerList = () => {
   return dispatch => {
     axios.get("http://localhost:3001/banner")
@@ -88,3 +94,14 @@ export const asyncLiveData = () => {
       })
   }
 }
+
+export const asyncCommodityData = () => {
+  return dispatch => {
+    axios.get("http://localhost:3001/commodity")
+      .then(response => {
+        console.log(response.data);
+        dispatch(onCommodityData(response.data))
+      })
+  }
+}
+
