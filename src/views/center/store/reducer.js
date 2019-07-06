@@ -4,15 +4,15 @@ import * as Types from './actionTypes'
 const initState = {
   username: {},
   banner: [],
-  price:{},
-  title:'',
-  sold:{},
-  brand:{},
-  brand1:[],
-  coupon:[],
-  shopCoupons:[],
-  mileage:{},
-  serviceTimeInfo:[],
+  price: {},
+  title: '',
+  sold: {},
+  brand: {},
+  brand1: [],
+  coupon: [],
+  shopCoupons: [],
+  mileage: {},
+  serviceTimeInfo: [],
 
 }
 
@@ -24,18 +24,18 @@ export default (state = initState, action) => {
   if (action.type === Types.GET_BANNER) {
     console.log(action.value)
     newState.username = action.value
-    newState.banner=action.value.banner.data.pics
-    newState.price=action.value.price.data.mainPrice
-    newState.title=action.value.title.data.itemTitle
-    newState.sold=action.value.sold.data
-    newState.brand=action.value.brand.data
-    newState.brand1=action.value.brand.data.cells
-    newState.coupon=action.value.coupon.data.cells
-    newState.shopCoupons=action.value.shopCoupons.data.couponList
-    newState.mileage=action.value.mileage.data
-    newState.serviceTimeInfo=action.value.serviceTimeInfo.data.infos
+    newState.banner = action.value.banner.data.pics
+    newState.price = action.value.price.data.mainPrice
+    newState.title = action.value.title.data.itemTitle
+    newState.sold = action.value.sold.data
+    newState.brand = action.value.brand.data
+    newState.brand1 = action.value.brand.data.cells
+    newState.coupon = action.value.coupon.data.cells
+    newState.shopCoupons = action.value.shopCoupons.data.couponList
+    newState.mileage = action.value.mileage.data
+    newState.serviceTimeInfo = action.value.serviceTimeInfo.data.infos
   }
 
-// 返回保存的数据
+  // 返回保存的数据
   return newState;
 }

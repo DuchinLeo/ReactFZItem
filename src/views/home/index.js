@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit, Find, Travel, TravelList, TitleWarp, Live } from './style';
+import { HomeWrap, HeaderWarp, Logo, ImgWarp, IconWarp, Search, HotSearch, Banner, Tickets, Subentry, Benefit, Find, Travel, TravelList, TitleWarp, Live, Love, Commodity } from './style';
 import { connect } from 'react-redux';
 import { Form, Dropdown, Menu, Input, Carousel } from 'antd'
 import './style.scss'
@@ -20,21 +20,24 @@ class Home extends Component {
       ticket: [],
       sift: [],
       travel: [],
-      live: []
+      live: [],
+      commodity: [],
+      number: 100
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.props.getBannerList();
     this.props.findData();
     this.props.ticketData();
     this.props.siftData();
     this.props.travelData();
     this.props.liveData();
+    this.props.commodityData();
   }
 
 
-  render () {
+  render() {
     return (
       <HomeWrap>
         <HeaderWarp className="header">
@@ -214,29 +217,134 @@ class Home extends Component {
             })
           }
         </Live>
+        <Love className="love">
+          <h2>猜你喜欢</h2>
+          <span>你想要的旅行好货</span>
+        </Love>
+        <Commodity className="commodity">
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to="/center" className="shop">
+            <img src={this.props.commodity.image} alt="" />
+            <div className="shop-referral">
+              <span className="shop-title">
+                {this.props.commodity.title}
+              </span>
+              <span className="shop-content">
+                {this.props.commodity.conter}
+              </span>
+              <div>
+                <span>￥</span>
+                <span>{this.props.commodity.price}</span>
+                <span>{this.props.commodity.sold}</span>
+              </div>
+            </div>
+          </NavLink>
+        </Commodity>
       </HomeWrap>
     );
   }
 }
 
 const MapBannerList = dispatch => ({
-  getBannerList () {
+  getBannerList() {
     dispatch(actions.asyncBannerList());
   },
-  findData () {
+  findData() {
     dispatch(actions.asyncFindData());
   },
-  ticketData () {
+  ticketData() {
     dispatch(actions.asyncTicketData());
   },
-  siftData () {
+  siftData() {
     dispatch(actions.asyncSiftData());
   },
-  travelData () {
+  travelData() {
     dispatch(actions.asyncTravelData());
   },
   liveData() {
     dispatch(actions.asyncLiveData());
+  },
+  commodityData() {
+    dispatch(actions.asyncCommodityData())
   }
 })
 
@@ -247,7 +355,7 @@ const HomeUI = Form.create({})(Home);
 const menu = (
   <Menu className="menu">
     <Menu.Item>
-      <div>
+      <div className="main-item">
         <img src="https://gw.alicdn.com/tfs/TB1p03kjWagSKJjy0FhXXcrbFXa-48-48.png" alt="我的行程" title="我的行程" />
         <NavLink to="/market" className="menu-span">我的订单</NavLink>
       </div>
@@ -300,7 +408,9 @@ export default connect(
     ticket: bannerImg.ticket,
     sift: bannerImg.sift,
     travel: bannerImg.travel,
-    live: bannerImg.live
+    live: bannerImg.live,
+    commodity: bannerImg.commodity
   }),
   MapBannerList
 )(HomeUI)
+
