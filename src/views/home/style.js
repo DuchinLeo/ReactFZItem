@@ -48,3 +48,7 @@ export const TravelList = styled.div``
 export const TitleWarp = styled.div``
 
 export const Live = styled.div``
+
+export const Love = styled.div``
+
+export const Commodity = styled.div``
