@@ -102,9 +102,10 @@ class Login extends Component {
               className="login-box"
             // label=" " colon={false}
             >
-              <Button type="primary" htmlType="submit" className="login-form-button">
+              <Button type="primary" htmlType="submit" className="login-form-button"
+              >
                 登陆
-            </Button>
+              </Button>
             </Form.Item>
           </Form>
         </div>

@@ -12,9 +12,11 @@
     font-size: px2rem(16) !important;
   }
 }
+
 .login-box-a {
   overflow: hidden;
   position: relative;
+  background: #fff;
   .box {
     margin: 0 auto;
     height: px2rem(80);
@@ -53,6 +55,7 @@
           color: #ddd;
         }
         input {
+          background: #fff;
           border: px2rem(1) solid #ddd;
           font-size: px2rem(16) !important;
           height: px2rem(30);
@@ -68,11 +71,11 @@
           font-size: px2rem(14) !important;
           color: #666;
         }
-        button {
+        button.login-form-button {
           color: #fff;
           width: 100%;
           height: px2rem(45);
-          font-size: px2rem(16);
+          font-size: px2rem(16) !important;
           background: -webkit-linear-gradient(
             left,
             rgb(236, 166, 166),
