@@ -369,7 +369,7 @@ const menu = (
     <Menu.Item>
       <div>
         <img src="https://gw.alicdn.com/tfs/TB1p3umdgoQMeJjy1XaXXcSsFXa-48-48.png" alt="我的收藏" title="我的收藏" />
-        <NavLink to="/" className="menu-span">我的收藏</NavLink>
+        <NavLink to="/center" className="menu-span">我的收藏</NavLink>
       </div>
     </Menu.Item>
     <Menu.Item>
