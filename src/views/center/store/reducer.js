@@ -13,6 +13,7 @@ const initState = {
   shopCoupons:[],
   mileage:{},
   serviceTimeInfo:[],
+  mn:[],
 
 }
 
@@ -34,6 +35,7 @@ export default (state = initState, action) => {
     newState.shopCoupons=action.value.shopCoupons.data.couponList
     newState.mileage=action.value.mileage.data
     newState.serviceTimeInfo=action.value.serviceTimeInfo.data.infos
+    newState.mn=action.value.mn.data
   }
 
 // 返回保存的数据
