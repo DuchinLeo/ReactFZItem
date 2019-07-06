@@ -1542,5 +1542,21 @@
             "tripdate": "2019-07-12",
             "price": "699"
         }
+    ],
+    "live": [
+        {
+            "liveId": "230250120840",
+            "statusText": "直播中",
+            "title": "民族刺绣文化艺术天堂",
+            "viewCount": "284观看",
+            "image": "https://gw.alicdn.com/tfscom/i1/O1CN01v4aobO1T0bPmku5Jz_!!0-dgshop.jpg"
+        },
+        {
+            "liveId": "230437827004",
+            "statusText": "直播中",
+            "title": "藏文化讲解加福利",
+            "viewCount": "1300观看",
+            "image": "https://gw.alicdn.com/tfscom/i1/O1CN01d4P48D1RqhEQx0BIt_!!0-dgshop.jpg"
+        }
     ]
 }

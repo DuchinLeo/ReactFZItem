@@ -26,6 +26,11 @@ export const onTravelData = data => ({
   data
 })
 
+export const onLiveData = data => ({
+  type: Types.SET_LIVE_DATA,
+  data
+})
+
 export const asyncBannerList = () => {
   return dispatch => {
     axios.get("http://localhost:3001/banner")
@@ -70,6 +75,16 @@ export const asyncTravelData = () => {
       .then(response => {
         // console.log(response.data);
         dispatch(onTravelData(response.data))
+      })
+  }
+}
+
+export const asyncLiveData = () => {
+  return dispatch => {
+    axios.get("http://localhost:3001/live")
+      .then(response => {
+        console.log(response.data);
+        dispatch(onLiveData(response.data))
       })
   }
 }
